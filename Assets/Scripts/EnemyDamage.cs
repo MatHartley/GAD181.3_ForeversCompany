@@ -25,7 +25,7 @@ public class EnemyDamage : MonoBehaviour
             {
                 playerController.knockFromRight = true;
             }
-            if (collision.transform.position.x <= transform.position.x)
+            if (collision.transform.position.x >= transform.position.x)
             {
                 playerController.knockFromRight = false;
             }

@@ -23,7 +23,7 @@ public class HealthManager : MonoBehaviour
 
     [Header("Private Health Variables")]
     private float healthDegenRate = 1.0f;
-    private float healthRegenRate = 3.0f;
+    private float healthRegenRate = 5.0f;
     private bool safeguardActive = false;
     private int closeRange = 10;
 

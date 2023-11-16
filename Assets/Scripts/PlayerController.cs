@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             if (knockFromRight)
             {
-                rigidBody.velocity = new Vector2(knockbackForce, knockbackForce);
+                rigidBody.velocity = new Vector2(-knockbackForce, knockbackForce);
             }
             if (!knockFromRight)
             {

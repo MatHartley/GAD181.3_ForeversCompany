@@ -5,25 +5,47 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Player")]
+    [Header("Player Movement")]
     public Rigidbody2D rigidBody;
+    public float speed = 5f;
+
+    [Header("Knockback")]
+    public float knockbackForce;
+    public float knockbackCount;
+    public float knockbackTime;
+    public bool knockFromRight;
 
     [Header("Scripts")]
     public HealthManager healthManager;
 
     [Header("Private Variables")]
-    private float speed = 5f;
     private float horizontal;
     private float vertical;
     private bool isFacingRight = true;
 
     /// <summary>
-    /// Update sets the velocity of the player's rigid body and checks the facing of the sprite
+    /// FixedUpdate sets the velocity of the player's rigid body and checks the facing of the sprite
     /// </summary>
-    void Update()
+    void FixedUpdate()
     {
-        //Sets the player's movement velocity based on the speed
-        rigidBody.velocity = new Vector2(horizontal * speed, vertical * speed);
+        if (knockbackCount <= 0)
+        {
+            //Sets the player's movement velocity based on the speed
+            rigidBody.velocity = new Vector2(horizontal * speed, vertical * speed);
+        }
+        else
+        {
+            if (knockFromRight)
+            {
+                rigidBody.velocity = new Vector2(knockbackForce, knockbackForce);
+            }
+            if (!knockFromRight)
+            {
+                rigidBody.velocity = new Vector2(knockbackForce, knockbackForce);
+            }
+
+            knockbackCount -= Time.deltaTime;
+        }
 
         //Calls flip based on the player's movement direction and current facing
         if (!isFacingRight && horizontal > 0f)

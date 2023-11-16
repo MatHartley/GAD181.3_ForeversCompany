@@ -13,20 +13,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Safeguard",
+                    "type": "Button",
+                    "id": "e7a80e46-d80d-4ac6-999f-3ef42ff3809c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "WASD",
                     "id": "00ca640b-d935-4593-8157-c05846ea39b3",
@@ -84,23 +82,12 @@
                 },
                 {
                     "name": "",
-                    "id": "1635d3fe-58b6-4ba9-a4e2-f4b964f6b5c8",
-                    "path": "<XRController>/{Primary2DAxis}",
+                    "id": "4ce9d95d-1896-4789-b2d7-d2555397f768",
+                    "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "XR",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3ea4d645-4504-4529-b061-ab81934c3752",
-                    "path": "<Joystick>/stick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Move",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Safeguard",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -118,20 +105,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Safeguard",
+                    "type": "Button",
+                    "id": "3f0c2a24-ffc1-48d1-a5f7-0ab058ba7a03",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "6780b5c8-bdc9-4448-bb7d-c560c41dd6a3",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "WASD",
                     "id": "dd3d0fb4-67c1-40ab-b9e0-47a64d439146",
@@ -146,7 +131,7 @@
                 {
                     "name": "up",
                     "id": "11033e95-0214-4c88-a749-2cf189e5307f",
-                    "path": "<Keyboard>/i",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -157,7 +142,7 @@
                 {
                     "name": "down",
                     "id": "caf1eb64-13d4-4f00-9ca5-1f086821adbe",
-                    "path": "<Keyboard>/k",
+                    "path": "<Keyboard>/semicolon",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -168,7 +153,7 @@
                 {
                     "name": "left",
                     "id": "9f21d1e2-75fb-4cde-9592-7a5177ac706f",
-                    "path": "<Keyboard>/j",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -179,7 +164,7 @@
                 {
                     "name": "right",
                     "id": "8e6275d3-e356-46de-b8dd-727bc23a917d",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/quote",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -189,23 +174,12 @@
                 },
                 {
                     "name": "",
-                    "id": "8098f679-6f74-4d58-8e7f-242d0360d532",
-                    "path": "<XRController>/{Primary2DAxis}",
+                    "id": "a877fd0c-327c-4c1a-9a9c-008d4d5bf58d",
+                    "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "XR",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2c019e65-3806-49dc-a0a2-9ae1b6367834",
-                    "path": "<Joystick>/stick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Move",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Safeguard",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

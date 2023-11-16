@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player Movement")]
     public Rigidbody2D rigidBody;
     public float speed = 5f;
+    public Animator anim;
 
     [Header("Knockback")]
     public float knockbackForce;
@@ -75,8 +76,15 @@ public class PlayerController : MonoBehaviour
     /// <param name="context"></param>
     public void Move(InputAction.CallbackContext context)
     {
-        horizontal = context.ReadValue<Vector2>().x;
-        vertical = context.ReadValue<Vector2>().y;
+
+            anim.SetBool("isMoving", true);
+            horizontal = context.ReadValue<Vector2>().x;
+            vertical = context.ReadValue<Vector2>().y;
+
+        if (context.canceled)
+        {
+            anim.SetBool("isMoving", false);
+        }
     }
 
     /// <summary>

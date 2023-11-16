@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - ALPHAOUTLINE_ON
-  - FISHEYE_ON
   - GLOW_ON
   - GRADIENTCOLORRAMP_ON
   - OUTBASE8DIR_ON
@@ -103,7 +102,7 @@ Material:
     - _ColorChangeTolerance2: 0.25
     - _ColorChangeTolerance3: 0.25
     - _ColorRampBlend: 1
-    - _ColorRampLuminosity: 0.5
+    - _ColorRampLuminosity: 0.59
     - _ColorRampOutline: 0
     - _ColorSwapBlend: 1
     - _ColorSwapBlueLuminosity: 0.5
@@ -119,14 +118,14 @@ Material:
     - _FadeBurnGlow: 2
     - _FadeBurnTransition: 0.075
     - _FadeBurnWidth: 0.025
-    - _FishEyeUvAmount: 0
-    - _FlickerAlpha: 0.475
-    - _FlickerFreq: 2.17
-    - _FlickerPercent: 0.231
+    - _FishEyeUvAmount: 0.122
+    - _FlickerAlpha: 0
+    - _FlickerFreq: 0.2
+    - _FlickerPercent: 0.05
     - _GhostBlend: 0
     - _GhostColorBoost: 1
     - _GhostTransparency: 0
-    - _GlitchAmount: 20
+    - _GlitchAmount: 7.3
     - _GlitchSize: 1
     - _Glow: 1
     - _GlowGlobal: 1
@@ -146,7 +145,7 @@ Material:
     - _HandDrawnAmount: 12.2
     - _HandDrawnSpeed: 5
     - _HitEffectBlend: 1
-    - _HitEffectGlow: 6.1
+    - _HitEffectGlow: 7
     - _HologramBlend: 1
     - _HologramMaxAlpha: 0.75
     - _HologramMinAlpha: 0.1
@@ -229,9 +228,9 @@ Material:
     - _WaveY: 0.5
     - _ZTestMode: 4
     - _ZWrite: 0
-    - _ZoomUvAmount: 1.46
+    - _ZoomUvAmount: 0.1
     m_Colors:
-    - _AlphaOutlineColor: {r: 0.25819492, g: 0, b: 1, a: 1}
+    - _AlphaOutlineColor: {r: 0.66800976, g: 0, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol2: {r: 1, g: 1, b: 0, a: 1}
@@ -252,7 +251,7 @@ Material:
     - _HitEffectColor: {r: 1, g: 0, b: 0, a: 1}
     - _HologramStripeColor: {r: 0, g: 1, b: 1, a: 1}
     - _InnerOutlineColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0.643137, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0.6425381, b: 1, a: 1}
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}

@@ -35,6 +35,7 @@ public class EnemyPatrol : MonoBehaviour
             //Check the patrol destination of the enemy...
             if (patrolDestination == 0)
             {
+                LookRight();
                 //...move towards it...
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, speed * Time.deltaTime);
                 if (Vector2.Distance(transform.position, patrolPoints[0].position) < 0.5f)
@@ -46,6 +47,7 @@ public class EnemyPatrol : MonoBehaviour
             }
             if (patrolDestination == 1)
             {
+                LookLeft();
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, speed * Time.deltaTime);
                 if (Vector2.Distance(transform.position, patrolPoints[1].position) < 0.5f)
                 {
@@ -65,4 +67,18 @@ public class EnemyPatrol : MonoBehaviour
         localScale.x *= -1f;
         gameObject.transform.localScale = localScale;
     }
+    void LookLeft()
+    {
+        Vector3 localScale = gameObject.transform.localScale;
+        localScale.x = -1f;
+        gameObject.transform.localScale = localScale;
+    }
+
+    void LookRight()
+    {
+        Vector3 localScale = gameObject.transform.localScale;
+        localScale.x = 1f;
+        gameObject.transform.localScale = localScale;
+    }
+
 }

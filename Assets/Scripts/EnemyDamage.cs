@@ -31,15 +31,31 @@ public class EnemyDamage : MonoBehaviour
             playerController.knockbackCount = playerController.knockbackTime;
             if (collision.transform.position.x <= transform.position.x)
             {
+                LookLeft();
                 playerController.knockFromRight = true;
             }
             if (collision.transform.position.x >= transform.position.x)
             {
+                LookRight();
                 playerController.knockFromRight = false;
             }
             healthManager.TakeDamage(damage, collision.gameObject);
-            StartCoroutine(WaitForTime(1));
+            StartCoroutine(WaitForTime(.5f));
         }
+    }
+
+    void LookLeft()
+    {
+        Vector3 localScale = gameObject.transform.localScale;
+        localScale.x = -1f;
+        gameObject.transform.localScale = localScale;
+    }
+
+    void LookRight()
+    {
+        Vector3 localScale = gameObject.transform.localScale;
+        localScale.x = 1f;
+        gameObject.transform.localScale = localScale;
     }
 
     IEnumerator WaitForTime(float time)

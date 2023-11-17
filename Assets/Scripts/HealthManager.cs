@@ -17,6 +17,7 @@ public class HealthManager : MonoBehaviour
     public Material playerOneMat;
     public Material playerTwoMat;
     public Material safeguardMat;
+    public Material regenMat;
 
     [Header("Health Variables")]
     [Range(0,100)]
@@ -53,10 +54,12 @@ public class HealthManager : MonoBehaviour
 
             //if they are too far apart they start to loose health...
             if (playerDistance > closeRange)
-            {
+            { 
                 DegenHealth();
                 if (!safeguardActive)
                 {
+                    playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
+                    playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
                     playerOneImmune = false;
                     playerTwoImmune = false;
                 }
@@ -65,6 +68,7 @@ public class HealthManager : MonoBehaviour
             else if (playerDistance < closeRange)
             {
                 RegenHealth();
+                if (currentHealth < 100)
                 playerOneImmune = true;
                 playerTwoImmune = true;
             }
@@ -140,8 +144,15 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth < 100)
         {
+            playerOne.GetComponent<SpriteRenderer>().material = regenMat;
+            playerTwo.GetComponent<SpriteRenderer>().material = regenMat;
             currentHealth += (healthRegenRate * Time.deltaTime);
             DisplayHealth();
+        }
+        else
+        {
+            playerOne.GetComponent<SpriteRenderer>().material = safeguardMat;
+            playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat;
         }
     }
 

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587042085959468208}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.5200195, y: -2.830017, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -52,6 +52,7 @@ MonoBehaviour:
   playerOneMat: {fileID: 2100000, guid: f7996d9458e2b6841b90c14b2a0a095b, type: 2}
   playerTwoMat: {fileID: 2100000, guid: 7c882046f2b4afd4b842c4ba6421c684, type: 2}
   safeguardMat: {fileID: 2100000, guid: 6b7544359eeeae24497d6b324bc87747, type: 2}
+  regenMat: {fileID: 2100000, guid: cdfcae5fab32c9640862a02be5d8e07b, type: 2}
   currentHealth: 100
   maxHealth: 100
   playerDistance: 0

@@ -40,7 +40,7 @@ public class EnemyDamage : MonoBehaviour
                 playerController.knockFromRight = false;
             }
             healthManager.TakeDamage(damage, collision.gameObject);
-            StartCoroutine(WaitForTime(.5f));
+            StartCoroutine(WaitForTime(0.5f));
         }
     }
 

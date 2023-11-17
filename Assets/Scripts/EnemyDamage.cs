@@ -10,7 +10,6 @@ public class EnemyDamage : MonoBehaviour
     [Header("Scripts")]
     public HealthManager healthManager;
     private PlayerController playerController;
-    public EnemyPatrol enemyPatrol;
 
     [Header("Animation")]
     private Animator anim;
@@ -41,10 +40,6 @@ public class EnemyDamage : MonoBehaviour
             healthManager.TakeDamage(damage, collision.gameObject);
             StartCoroutine(WaitForTime(1));
         }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-
     }
 
     IEnumerator WaitForTime(float time)

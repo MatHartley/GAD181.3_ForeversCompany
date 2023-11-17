@@ -13,6 +13,11 @@ public class HealthManager : MonoBehaviour
     public GameObject playerOne;
     public GameObject playerTwo;
 
+    [Header("Materials")]
+    public Material playerOneMat;
+    public Material playerTwoMat;
+    public Material safeguardMat;
+
     [Header("Health Variables")]
     [Range(0,100)]
     public float currentHealth;
@@ -25,7 +30,7 @@ public class HealthManager : MonoBehaviour
     private float healthDegenRate = 1.0f;
     private float healthRegenRate = 5.0f;
     private bool safeguardActive = false;
-    private int closeRange = 10;
+    private int closeRange = 5;
 
     /// <summary>
     /// Start sets the current health to the maximum health
@@ -72,15 +77,20 @@ public class HealthManager : MonoBehaviour
     /// </summary>
     public void ActivateSafeguard(GameObject playerTrigger)
     {
-        if (playerTrigger.name == "Player1")
+        if (playerDistance > closeRange)
         {
-            playerTwoImmune = true;
-            safeguardActive = true;
-        }
-        else if (playerTrigger.name == "Player2")
-        {
-            playerOneImmune = true;
-            safeguardActive = true;
+            if (playerTrigger.name == "Player1")
+            {
+                playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat;
+                playerTwoImmune = true;
+                safeguardActive = true;
+            }
+            else if (playerTrigger.name == "Player2")
+            {
+                playerOne.GetComponent<SpriteRenderer>().material = safeguardMat;
+                playerOneImmune = true;
+                safeguardActive = true;
+            }
         }
     }
 
@@ -89,12 +99,11 @@ public class HealthManager : MonoBehaviour
     /// </summary>
     public void RemoveSafeguard(GameObject playerTrigger)
     {
-        if (playerDistance > closeRange)
-        {
-            playerTwoImmune = false;
+            playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
+            playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
             playerOneImmune = false;
+            playerTwoImmune = false;
             safeguardActive = false;
-        }
     }
 
     /// <summary>

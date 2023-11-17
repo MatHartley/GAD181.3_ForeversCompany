@@ -7,8 +7,10 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Player Movement")]
     public Rigidbody2D rigidBody;
-    public float speed = 5f;
     public Animator anim;
+    public float speed = 5f;
+    public float originSpeed = 5f;
+    public bool isFacingRight = true;
 
     [Header("Knockback")]
     public float knockbackForce;
@@ -16,13 +18,29 @@ public class PlayerController : MonoBehaviour
     public float knockbackTime;
     public bool knockFromRight;
 
+    [Header("Projectile")]
+    public GameObject projectilePrefab;
+    public Transform launchPoint;
+    public float shootTime;
+    public float shootCount;
+
     [Header("Scripts")]
     public HealthManager healthManager;
 
     [Header("Private Variables")]
     private float horizontal;
     private float vertical;
-    private bool isFacingRight = true;
+
+    void Start()
+    {
+        shootCount = shootTime;
+        speed = originSpeed;
+    }
+
+    void Update()
+    {
+        shootCount -= Time.deltaTime;
+    }
 
     /// <summary>
     /// FixedUpdate sets the velocity of the player's rigid body and checks the facing of the sprite
@@ -90,7 +108,6 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// Safeguard allows one player to lock their position to make the other immune to damage
     /// </summary>
-
     public void Safeguard(InputAction.CallbackContext context)
     {
         if(context.performed)
@@ -103,8 +120,22 @@ public class PlayerController : MonoBehaviour
         if (context.canceled)
         {
             healthManager.RemoveSafeguard(gameObject);
-            speed = 5f;
+            speed = originSpeed;
             Debug.Log(gameObject.name + " deactivated SAFEGUARD.");
+        }
+    }
+
+    /// <summary>
+    /// Fire causes the player to shoot a projectile 
+    /// </summary>
+    /// <param name="context"></param>
+    public void Fire(InputAction.CallbackContext context)
+    {
+        if (context.performed && shootCount <= 0)
+        {
+            projectilePrefab.GetComponent<PlayerProjectile>().SetSpeed(isFacingRight);
+            Instantiate(projectilePrefab, launchPoint.position, Quaternion.identity);
+            shootCount = shootTime;
         }
     }
 }

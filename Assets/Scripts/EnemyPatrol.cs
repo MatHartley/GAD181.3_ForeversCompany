@@ -25,26 +25,33 @@ public class EnemyPatrol : MonoBehaviour
     /// </summary>
     void Update()
     {
-
-        //Check the patrol destination of the enemy...
-        if (patrolDestination == 0)
+        if (anim.GetBool("isDead"))
         {
-            //...move towards it...
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, speed * Time.deltaTime);
-            if (Vector2.Distance(transform.position, patrolPoints[0].position) < 0.5f)
-            {
-                //...and turn around when it gets there
-                Flip();
-                patrolDestination = 1;
-            }
+            speed = 0;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
-        if (patrolDestination == 1)
+        else if (!anim.GetBool("isAttacking"))
         {
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, speed * Time.deltaTime);
-            if (Vector2.Distance(transform.position, patrolPoints[1].position) < 0.5f)
+            //Check the patrol destination of the enemy...
+            if (patrolDestination == 0)
             {
-                Flip();
-                patrolDestination = 0;
+                //...move towards it...
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, speed * Time.deltaTime);
+                if (Vector2.Distance(transform.position, patrolPoints[0].position) < 0.5f)
+                {
+                    //...and turn around when it gets there
+                    Flip();
+                    patrolDestination = 1;
+                }
+            }
+            if (patrolDestination == 1)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, speed * Time.deltaTime);
+                if (Vector2.Distance(transform.position, patrolPoints[1].position) < 0.5f)
+                {
+                    Flip();
+                    patrolDestination = 0;
+                }
             }
         }
     }

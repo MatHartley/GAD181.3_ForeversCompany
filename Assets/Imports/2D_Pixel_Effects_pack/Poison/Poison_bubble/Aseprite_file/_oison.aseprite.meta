@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 56
       width: 22
       height: 12
-    spriteID: 9b4429af4eb8ddd46ba53931620b4fe2
+    spriteID: 5f9ab6465b0e297428cae0701d174f88
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 31
       width: 22
       height: 17
-    spriteID: bb4f1f81a34dbd749805a67fe59a3ed0
+    spriteID: ad8b59aaecd4cbb49a7cdddc309487a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 22
       height: 19
-    spriteID: 3640009d434f8d74d80a29c32e329afd
+    spriteID: 74e787a4163119242b1013286ef8f0d7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 93
       width: 22
       height: 21
-    spriteID: dca4096cf0c48184ebf7f44a8a5035b9
+    spriteID: 1874b575fa8ff86409513692725fe9ff
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 64
       width: 23
       height: 21
-    spriteID: 10c25d0d7223b2a4cbf458f70fc29e9c
+    spriteID: 37b413abbcf3a9546959e445bc75fa2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 4
       width: 23
       height: 22
-    spriteID: 8cb489f7b92dd054fa6102a6ec45a3a2
+    spriteID: 52a7dd2083ac8ad4abaf030888cadf82
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 34
       width: 23
       height: 22
-    spriteID: 1813fe71ad9524f4a8efb68d0e947b67
+    spriteID: 0135c7c1740556041b7bf4a750578ecd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -275,7 +275,7 @@ ScriptedImporter:
         y: 6
         width: 22
         height: 12
-      spriteId: 9b4429af4eb8ddd46ba53931620b4fe2
+      spriteId: 5f9ab6465b0e297428cae0701d174f88
     - name: _oison_Frame_1
       frameIndex: 1
       cellRect:
@@ -283,7 +283,7 @@ ScriptedImporter:
         y: 6
         width: 22
         height: 17
-      spriteId: bb4f1f81a34dbd749805a67fe59a3ed0
+      spriteId: ad8b59aaecd4cbb49a7cdddc309487a8
     - name: _oison_Frame_2
       frameIndex: 2
       cellRect:
@@ -291,7 +291,7 @@ ScriptedImporter:
         y: 6
         width: 22
         height: 19
-      spriteId: 3640009d434f8d74d80a29c32e329afd
+      spriteId: 74e787a4163119242b1013286ef8f0d7
     - name: _oison_Frame_3
       frameIndex: 3
       cellRect:
@@ -299,7 +299,7 @@ ScriptedImporter:
         y: 6
         width: 22
         height: 21
-      spriteId: dca4096cf0c48184ebf7f44a8a5035b9
+      spriteId: 1874b575fa8ff86409513692725fe9ff
     - name: _oison_Frame_4
       frameIndex: 4
       cellRect:
@@ -307,7 +307,7 @@ ScriptedImporter:
         y: 6
         width: 23
         height: 21
-      spriteId: 10c25d0d7223b2a4cbf458f70fc29e9c
+      spriteId: 37b413abbcf3a9546959e445bc75fa2b
     - name: _oison_Frame_5
       frameIndex: 5
       cellRect:
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 6
         width: 23
         height: 22
-      spriteId: 8cb489f7b92dd054fa6102a6ec45a3a2
+      spriteId: 52a7dd2083ac8ad4abaf030888cadf82
     - name: _oison_Frame_6
       frameIndex: 6
       cellRect:
@@ -323,7 +323,7 @@ ScriptedImporter:
         y: 6
         width: 23
         height: 22
-      spriteId: 1813fe71ad9524f4a8efb68d0e947b67
+      spriteId: 0135c7c1740556041b7bf4a750578ecd
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 38
       width: 16
       height: 19
-    spriteID: a4432b72423d5fa4383cd3317059729d
+    spriteID: 35c8d2414224927408a2cf3293c5b4da
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 38
       width: 16
       height: 27
-    spriteID: 97a82d40838fccb4c9dff492a8d78f27
+    spriteID: 2814a78ccb0e6974a8882e5fa9491726
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 38
       width: 16
       height: 29
-    spriteID: 791581731001d8849a83433afd19e539
+    spriteID: 1bd7a3fc63fb52b43a6373c6c1bea201
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 38
       width: 19
       height: 29
-    spriteID: 55643e5920b9d4a4d84cb2f742acbc15
+    spriteID: 6d203e2767957c64e9a75aafcb507655
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 38
       width: 19
       height: 29
-    spriteID: a23af5b3453446340b74be5b416012e1
+    spriteID: 422f5eb14efe0b148b03206efea6f30b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 4
       width: 22
       height: 26
-    spriteID: 3ca57199e57a7294cb98f19fa5d6a5d0
+    spriteID: 549fe76a471088949845ea9f23506b3e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 4
       width: 21
       height: 20
-    spriteID: c2a711332b510534bbfa1be3af2f4df5
+    spriteID: efb4d0edcb28bc544bda6b73b8de30c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 4
       width: 20
       height: 16
-    spriteID: b248469a88edef44587cf3cfd86b0faf
+    spriteID: a005a23b08947504f999a1c0532dacb8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 12
-    spriteID: 62f5e4f6a8bd8104d9d128f5cbf5f041
+    spriteID: 7cf2d866b269df043ae9eab5f858608b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 5
         width: 16
         height: 19
-      spriteId: a4432b72423d5fa4383cd3317059729d
+      spriteId: 35c8d2414224927408a2cf3293c5b4da
     - name: Dust_explosion_Frame_1
       frameIndex: 1
       cellRect:
@@ -323,7 +323,7 @@ ScriptedImporter:
         y: 3
         width: 16
         height: 27
-      spriteId: 97a82d40838fccb4c9dff492a8d78f27
+      spriteId: 2814a78ccb0e6974a8882e5fa9491726
     - name: Dust_explosion_Frame_2
       frameIndex: 2
       cellRect:
@@ -331,7 +331,7 @@ ScriptedImporter:
         y: 3
         width: 16
         height: 29
-      spriteId: 791581731001d8849a83433afd19e539
+      spriteId: 1bd7a3fc63fb52b43a6373c6c1bea201
     - name: Dust_explosion_Frame_3
       frameIndex: 3
       cellRect:
@@ -339,7 +339,7 @@ ScriptedImporter:
         y: 3
         width: 19
         height: 29
-      spriteId: 55643e5920b9d4a4d84cb2f742acbc15
+      spriteId: 6d203e2767957c64e9a75aafcb507655
     - name: Dust_explosion_Frame_4
       frameIndex: 4
       cellRect:
@@ -347,7 +347,7 @@ ScriptedImporter:
         y: 3
         width: 19
         height: 29
-      spriteId: a23af5b3453446340b74be5b416012e1
+      spriteId: 422f5eb14efe0b148b03206efea6f30b
     - name: Dust_explosion_Frame_5
       frameIndex: 5
       cellRect:
@@ -355,7 +355,7 @@ ScriptedImporter:
         y: 7
         width: 22
         height: 26
-      spriteId: 3ca57199e57a7294cb98f19fa5d6a5d0
+      spriteId: 549fe76a471088949845ea9f23506b3e
     - name: Dust_explosion_Frame_6
       frameIndex: 6
       cellRect:
@@ -363,7 +363,7 @@ ScriptedImporter:
         y: 14
         width: 21
         height: 20
-      spriteId: c2a711332b510534bbfa1be3af2f4df5
+      spriteId: efb4d0edcb28bc544bda6b73b8de30c7
     - name: Dust_explosion_Frame_7
       frameIndex: 7
       cellRect:
@@ -371,7 +371,7 @@ ScriptedImporter:
         y: 18
         width: 20
         height: 16
-      spriteId: b248469a88edef44587cf3cfd86b0faf
+      spriteId: a005a23b08947504f999a1c0532dacb8
     - name: Dust_explosion_Frame_8
       frameIndex: 8
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         y: 22
         width: 19
         height: 12
-      spriteId: 62f5e4f6a8bd8104d9d128f5cbf5f041
+      spriteId: 7cf2d866b269df043ae9eab5f858608b
     linkedCells: []
     parentIndex: -1
   platformSettings: []

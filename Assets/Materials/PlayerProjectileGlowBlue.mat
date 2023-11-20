@@ -126,7 +126,7 @@ Material:
     - _GhostTransparency: 0
     - _GlitchAmount: 7.3
     - _GlitchSize: 1
-    - _Glow: 15
+    - _Glow: 5
     - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
@@ -229,7 +229,7 @@ Material:
     - _ZWrite: 0
     - _ZoomUvAmount: 0.1
     m_Colors:
-    - _AlphaOutlineColor: {r: 0, g: 0, b: 1, a: 1}
+    - _AlphaOutlineColor: {r: 0, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol2: {r: 1, g: 1, b: 0, a: 1}
@@ -241,7 +241,7 @@ Material:
     - _ColorSwapGreen: {r: 1, g: 1, b: 1, a: 1}
     - _ColorSwapRed: {r: 1, g: 1, b: 1, a: 1}
     - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
-    - _GlowColor: {r: 0, g: 0, b: 1, a: 1}
+    - _GlowColor: {r: 0, g: 1, b: 1, a: 1}
     - _GradBotLeftCol: {r: 0, g: 0, b: 1, a: 1}
     - _GradBotRightCol: {r: 0, g: 0, b: 1, a: 1}
     - _GradTopLeftCol: {r: 1, g: 0, b: 0, a: 1}

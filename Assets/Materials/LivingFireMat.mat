@@ -151,9 +151,9 @@ Material:
     - _HologramStripesAmount: 0.1
     - _HologramStripesSpeed: 4.5
     - _HologramUnmodAmount: 0
-    - _HsvBright: 0.97
-    - _HsvSaturation: 1.3
-    - _HsvShift: 180
+    - _HsvBright: 0.59
+    - _HsvSaturation: 0
+    - _HsvShift: 360
     - _InnerOutlineAlpha: 1
     - _InnerOutlineGlow: 4
     - _InnerOutlineThickness: 1
@@ -230,7 +230,7 @@ Material:
     - _ZoomUvAmount: 0.5
     m_Colors:
     - _AlphaOutlineColor: {r: 0.66800976, g: 0, b: 1, a: 1}
-    - _Color: {r: 0.19915324, g: 0.5660378, b: 0.16820933, a: 1}
+    - _Color: {r: 1, g: 0.5284636, b: 0, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol2: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol3: {r: 1, g: 1, b: 0, a: 1}
@@ -241,7 +241,7 @@ Material:
     - _ColorSwapGreen: {r: 1, g: 1, b: 1, a: 1}
     - _ColorSwapRed: {r: 1, g: 1, b: 1, a: 1}
     - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
-    - _GlowColor: {r: 0.07971394, g: 1, b: 0, a: 0.78431374}
+    - _GlowColor: {r: 1, g: 0.63525444, b: 0, a: 0.78431374}
     - _GradBotLeftCol: {r: 0, g: 0, b: 1, a: 1}
     - _GradBotRightCol: {r: 0, g: 0, b: 1, a: 1}
     - _GradTopLeftCol: {r: 1, g: 0, b: 0, a: 1}

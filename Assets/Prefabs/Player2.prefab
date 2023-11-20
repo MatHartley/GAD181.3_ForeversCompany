@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00020003319, y: 0.0026499927, z: 0}
-    m_Extent: {x: 1.0056, y: 0.99665, z: 0}
+    m_Center: {x: 0.0036500096, y: -0.0067499876, z: 0}
+    m_Extent: {x: 0.99645, y: 0.99654996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.000050008297, y: 0.00060001016, z: 0}
-    m_Extent: {x: 0.99095, y: 0.9987, z: 0}
+    m_Center: {x: 0.0021000206, y: 0.00050002337, z: 0}
+    m_Extent: {x: 1.0009, y: 1.0026, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -331,8 +331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5708263210032393639}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.296569, y: -5.627678, z: 0.2659964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -362,7 +362,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 7c882046f2b4afd4b842c4ba6421c684, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -407,8 +407,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 7626101755569774571}
-  speed: 5
   anim: {fileID: 2429441158238996348}
+  speed: 5
+  originSpeed: 5
+  isFacingRight: 1
   knockbackForce: 5
   knockbackCount: 0
   knockbackTime: 0.2
@@ -418,7 +420,6 @@ MonoBehaviour:
   shootTime: 2
   shootCount: 0
   healthManager: {fileID: 0}
-  isFacingRight: 1
 --- !u!114 &5065048438700580115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +659,7 @@ GameObject:
   - component: {fileID: 7626101755569774571}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Player2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

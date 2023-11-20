@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 111
       width: 8
       height: 7
-    spriteID: 446ea98c67de5cd46aaec76060cd90cc
+    spriteID: 45b9c8d8ea27b8a46921b95e28c508e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 34
       width: 25
       height: 21
-    spriteID: e0a371bddf5c965488d06cf211662718
+    spriteID: cd7e0400ca61ff0428b668a2d98ffefc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 24
       height: 22
-    spriteID: a1d7dfa0a64ea114284aa4b11dd6a39a
+    spriteID: 207e0d4d39eaa2e44aa163d584112943
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 90
       width: 20
       height: 21
-    spriteID: a1aea0881f4802140ae5bac676d65d5c
+    spriteID: 2afb28898baeca64380ff6c20ab6f8fe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 4
       width: 22
       height: 21
-    spriteID: d70e91f846236af47a6df207e4393548
+    spriteID: b170a96068f15a94c813701500baf9b8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 63
       width: 23
       height: 19
-    spriteID: a50fbd832d8a0444fb30f7ae7d9a1c62
+    spriteID: e598c85f7c7e2d744b524a3b2fcd78d6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 34
       width: 22
       height: 19
-    spriteID: 9cbb33252395d204cbcfd5172986d0da
+    spriteID: ff11571233173c14d86e7e4938371666
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 61
       width: 22
       height: 17
-    spriteID: ea5c9aed98d3248499cf3f5632461a32
+    spriteID: 34b72da1448a7ec4eab0531600ed027e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 86
       width: 12
       height: 17
-    spriteID: 38630b2feab2d0d42aa97c700188b459
+    spriteID: adc65a08bcd206b49bb24a5a3fb6ac72
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 16
         width: 8
         height: 7
-      spriteId: 446ea98c67de5cd46aaec76060cd90cc
+      spriteId: 45b9c8d8ea27b8a46921b95e28c508e4
     - name: Explosion_4_black_Frame_1
       frameIndex: 1
       cellRect:
@@ -323,7 +323,7 @@ ScriptedImporter:
         y: 13
         width: 25
         height: 21
-      spriteId: e0a371bddf5c965488d06cf211662718
+      spriteId: cd7e0400ca61ff0428b668a2d98ffefc
     - name: Explosion_4_black_Frame_2
       frameIndex: 2
       cellRect:
@@ -331,7 +331,7 @@ ScriptedImporter:
         y: 11
         width: 24
         height: 22
-      spriteId: a1d7dfa0a64ea114284aa4b11dd6a39a
+      spriteId: 207e0d4d39eaa2e44aa163d584112943
     - name: Explosion_4_black_Frame_3
       frameIndex: 3
       cellRect:
@@ -339,7 +339,7 @@ ScriptedImporter:
         y: 10
         width: 20
         height: 21
-      spriteId: a1aea0881f4802140ae5bac676d65d5c
+      spriteId: 2afb28898baeca64380ff6c20ab6f8fe
     - name: Explosion_4_black_Frame_4
       frameIndex: 4
       cellRect:
@@ -347,7 +347,7 @@ ScriptedImporter:
         y: 10
         width: 22
         height: 21
-      spriteId: d70e91f846236af47a6df207e4393548
+      spriteId: b170a96068f15a94c813701500baf9b8
     - name: Explosion_4_black_Frame_5
       frameIndex: 5
       cellRect:
@@ -355,7 +355,7 @@ ScriptedImporter:
         y: 12
         width: 23
         height: 19
-      spriteId: a50fbd832d8a0444fb30f7ae7d9a1c62
+      spriteId: e598c85f7c7e2d744b524a3b2fcd78d6
     - name: Explosion_4_black_Frame_6
       frameIndex: 6
       cellRect:
@@ -363,7 +363,7 @@ ScriptedImporter:
         y: 12
         width: 22
         height: 19
-      spriteId: 9cbb33252395d204cbcfd5172986d0da
+      spriteId: ff11571233173c14d86e7e4938371666
     - name: Explosion_4_black_Frame_7
       frameIndex: 7
       cellRect:
@@ -371,7 +371,7 @@ ScriptedImporter:
         y: 14
         width: 22
         height: 17
-      spriteId: ea5c9aed98d3248499cf3f5632461a32
+      spriteId: 34b72da1448a7ec4eab0531600ed027e
     - name: Explosion_4_black_Frame_8
       frameIndex: 8
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         y: 14
         width: 12
         height: 17
-      spriteId: 38630b2feab2d0d42aa97c700188b459
+      spriteId: adc65a08bcd206b49bb24a5a3fb6ac72
     linkedCells: []
     parentIndex: -1
   platformSettings: []

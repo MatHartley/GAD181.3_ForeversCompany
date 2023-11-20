@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 32
-    spriteID: 74e155eabd928e747b9a07324b3c12d8
+    spriteID: aa0d5e4ec5aff464ab95ee203ee12e3c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 90
       width: 21
       height: 34
-    spriteID: fd8b4ade7c2c54a4d9dac56a8ff08fbf
+    spriteID: 028dbb1b5ed3ab543a9acfbbbbcc4235
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 23
       height: 36
-    spriteID: f8ad4826abb72974db3ccd9cc2c3e94f
+    spriteID: 09ce73388dd61eb489649c2ab28bd372
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 48
       width: 23
       height: 34
-    spriteID: e7fd8fa84f5c4de4886130d1771e76b3
+    spriteID: 4adc1baa36edc7b44967fc24d35f7822
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -215,7 +215,7 @@ ScriptedImporter:
         y: 5
         width: 19
         height: 32
-      spriteId: 74e155eabd928e747b9a07324b3c12d8
+      spriteId: aa0d5e4ec5aff464ab95ee203ee12e3c
     - name: GreenSkull_fire_Frame_1
       frameIndex: 1
       cellRect:
@@ -223,7 +223,7 @@ ScriptedImporter:
         y: 6
         width: 21
         height: 34
-      spriteId: fd8b4ade7c2c54a4d9dac56a8ff08fbf
+      spriteId: 028dbb1b5ed3ab543a9acfbbbbcc4235
     - name: GreenSkull_fire_Frame_2
       frameIndex: 2
       cellRect:
@@ -231,7 +231,7 @@ ScriptedImporter:
         y: 6
         width: 23
         height: 36
-      spriteId: f8ad4826abb72974db3ccd9cc2c3e94f
+      spriteId: 09ce73388dd61eb489649c2ab28bd372
     - name: GreenSkull_fire_Frame_3
       frameIndex: 3
       cellRect:
@@ -239,7 +239,7 @@ ScriptedImporter:
         y: 6
         width: 23
         height: 34
-      spriteId: e7fd8fa84f5c4de4886130d1771e76b3
+      spriteId: 4adc1baa36edc7b44967fc24d35f7822
     linkedCells: []
     parentIndex: -1
   platformSettings: []

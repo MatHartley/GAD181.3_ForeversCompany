@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 40
       height: 50
-    spriteID: d2c9803ae49d7fb45b45598bbde90667
+    spriteID: bac09f6b7b0c0b747a0e05150773fa8e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 62
       width: 40
       height: 50
-    spriteID: 61381a77e6d9ef64f9fc328ffcad095c
+    spriteID: 24da24bd8203bf0498d5f0781a56f80c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 120
       width: 40
       height: 50
-    spriteID: 698a87b349f3fc14ebeda92a33bfdc3d
+    spriteID: 0b1c2d9441ead624abbab0ade95a32d6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 178
       width: 40
       height: 50
-    spriteID: ae2a4a762e8c12640a0ac5d7564c291c
+    spriteID: 78cf063f915076b44973a34593c2e10c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 4
       width: 40
       height: 50
-    spriteID: 59da3858b894b724ea4d49cd48f4492c
+    spriteID: eb3d0616d8b795a42836582f2c2b6449
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 62
       width: 40
       height: 50
-    spriteID: 95517eee139868a4c9cbc2b2c972b366
+    spriteID: 0a30d5cb564b77e44a2cfbe29bbddaef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 120
       width: 40
       height: 50
-    spriteID: 4d85ed7b5beac86448b56cd8f9bba209
+    spriteID: 7723bba5f6f43864898c5405c6ed1da0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 178
       width: 40
       height: 50
-    spriteID: fbefe7e910e92844e9b8d7074130c2fb
+    spriteID: 4f4b452117548224389f1980309f6145
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 4
       width: 40
       height: 50
-    spriteID: d41fe4085c2c51440925f0fb95d4b166
+    spriteID: b92bf8bfb9e60854ebddc977e517c6a5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 62
       width: 40
       height: 50
-    spriteID: 0b31d9b371cd93b4ebdec0373da101dd
+    spriteID: 29cb1418487da1545945d9baeff156b1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 120
       width: 40
       height: 50
-    spriteID: 5d5b930d7a06b75479fa77da51b8c980
+    spriteID: 6503de207bc124c4fa4b877c1071db5b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -355,7 +355,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: d2c9803ae49d7fb45b45598bbde90667
+      spriteId: bac09f6b7b0c0b747a0e05150773fa8e
     - name: Skul_jewel_glowing_new_Frame_1
       frameIndex: 1
       cellRect:
@@ -363,7 +363,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 61381a77e6d9ef64f9fc328ffcad095c
+      spriteId: 24da24bd8203bf0498d5f0781a56f80c
     - name: Skul_jewel_glowing_new_Frame_2
       frameIndex: 2
       cellRect:
@@ -371,7 +371,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 698a87b349f3fc14ebeda92a33bfdc3d
+      spriteId: 0b1c2d9441ead624abbab0ade95a32d6
     - name: Skul_jewel_glowing_new_Frame_3
       frameIndex: 3
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: ae2a4a762e8c12640a0ac5d7564c291c
+      spriteId: 78cf063f915076b44973a34593c2e10c
     - name: Skul_jewel_glowing_new_Frame_4
       frameIndex: 4
       cellRect:
@@ -387,7 +387,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 59da3858b894b724ea4d49cd48f4492c
+      spriteId: eb3d0616d8b795a42836582f2c2b6449
     - name: Skul_jewel_glowing_new_Frame_5
       frameIndex: 5
       cellRect:
@@ -395,7 +395,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 95517eee139868a4c9cbc2b2c972b366
+      spriteId: 0a30d5cb564b77e44a2cfbe29bbddaef
     - name: Skul_jewel_glowing_new_Frame_6
       frameIndex: 6
       cellRect:
@@ -403,7 +403,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 4d85ed7b5beac86448b56cd8f9bba209
+      spriteId: 7723bba5f6f43864898c5405c6ed1da0
     - name: Skul_jewel_glowing_new_Frame_7
       frameIndex: 7
       cellRect:
@@ -411,7 +411,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: fbefe7e910e92844e9b8d7074130c2fb
+      spriteId: 4f4b452117548224389f1980309f6145
     - name: Skul_jewel_glowing_new_Frame_8
       frameIndex: 8
       cellRect:
@@ -419,7 +419,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: d41fe4085c2c51440925f0fb95d4b166
+      spriteId: b92bf8bfb9e60854ebddc977e517c6a5
     - name: Skul_jewel_glowing_new_Frame_9
       frameIndex: 9
       cellRect:
@@ -427,7 +427,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 0b31d9b371cd93b4ebdec0373da101dd
+      spriteId: 29cb1418487da1545945d9baeff156b1
     - name: Skul_jewel_glowing_new_Frame_10
       frameIndex: 10
       cellRect:
@@ -435,7 +435,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 50
-      spriteId: 5d5b930d7a06b75479fa77da51b8c980
+      spriteId: 6503de207bc124c4fa4b877c1071db5b
     linkedCells: []
     parentIndex: -1
   platformSettings: []

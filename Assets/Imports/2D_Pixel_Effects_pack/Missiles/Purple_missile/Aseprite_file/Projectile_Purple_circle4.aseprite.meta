@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 106
       width: 16
       height: 16
-    spriteID: 6cded9ac73d9f584ea5b6c35b922a3a6
+    spriteID: 1dd29128d1f01624fa62a4f566bb5ce0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 42
       width: 24
       height: 24
-    spriteID: 427711e785306f14da74e46531a20148
+    spriteID: 08d6f627e1e306d45a7d6cb24f6e0c99
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 30
       height: 30
-    spriteID: 78e7b1186de834e4c8b6ccf337a77ba2
+    spriteID: b1efb804e5e1b234ebca63d67594af10
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 74
       width: 24
       height: 24
-    spriteID: d1833c636fe0e9d4e9c42755a251e6d1
+    spriteID: ac5cecba99169544caff2ea84387d7a3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -215,7 +215,7 @@ ScriptedImporter:
         y: 17
         width: 16
         height: 16
-      spriteId: 6cded9ac73d9f584ea5b6c35b922a3a6
+      spriteId: 1dd29128d1f01624fa62a4f566bb5ce0
     - name: Projectile_Purple_circle4_Frame_1
       frameIndex: 1
       cellRect:
@@ -223,7 +223,7 @@ ScriptedImporter:
         y: 13
         width: 24
         height: 24
-      spriteId: 427711e785306f14da74e46531a20148
+      spriteId: 08d6f627e1e306d45a7d6cb24f6e0c99
     - name: Projectile_Purple_circle4_Frame_2
       frameIndex: 2
       cellRect:
@@ -231,7 +231,7 @@ ScriptedImporter:
         y: 10
         width: 30
         height: 30
-      spriteId: 78e7b1186de834e4c8b6ccf337a77ba2
+      spriteId: b1efb804e5e1b234ebca63d67594af10
     - name: Projectile_Purple_circle4_Frame_3
       frameIndex: 3
       cellRect:
@@ -239,7 +239,7 @@ ScriptedImporter:
         y: 13
         width: 24
         height: 24
-      spriteId: d1833c636fe0e9d4e9c42755a251e6d1
+      spriteId: ac5cecba99169544caff2ea84387d7a3
     linkedCells: []
     parentIndex: -1
   platformSettings: []

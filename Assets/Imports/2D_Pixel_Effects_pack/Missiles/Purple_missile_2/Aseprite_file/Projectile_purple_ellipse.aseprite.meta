@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 31
       height: 31
-    spriteID: aca6b9ff090579b469df8680b28d87c0
+    spriteID: 6556d045d0d302a40ab1ea613ef613e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 82
       width: 21
       height: 37
-    spriteID: 0ea5c2ad619056e49a64b9374ec62f70
+    spriteID: 08a6ef4a128deb64e8c374c90f64e49e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 43
       width: 31
       height: 31
-    spriteID: 29473ce975fc7294b9d09b3df47aa555
+    spriteID: ff0155c26faa966449f43d106a221f4b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 4
       width: 37
       height: 21
-    spriteID: 94a29a3372b58ec45af7616c55b4458d
+    spriteID: 2bceab0433ba9144083892d9c5bfec40
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -215,7 +215,7 @@ ScriptedImporter:
         y: 10
         width: 31
         height: 31
-      spriteId: aca6b9ff090579b469df8680b28d87c0
+      spriteId: 6556d045d0d302a40ab1ea613ef613e2
     - name: Projectile_purple_ellipse_Frame_1
       frameIndex: 1
       cellRect:
@@ -223,7 +223,7 @@ ScriptedImporter:
         y: 7
         width: 21
         height: 37
-      spriteId: 0ea5c2ad619056e49a64b9374ec62f70
+      spriteId: 08a6ef4a128deb64e8c374c90f64e49e
     - name: Projectile_purple_ellipse_Frame_2
       frameIndex: 2
       cellRect:
@@ -231,7 +231,7 @@ ScriptedImporter:
         y: 10
         width: 31
         height: 31
-      spriteId: 29473ce975fc7294b9d09b3df47aa555
+      spriteId: ff0155c26faa966449f43d106a221f4b
     - name: Projectile_purple_ellipse_Frame_3
       frameIndex: 3
       cellRect:
@@ -239,7 +239,7 @@ ScriptedImporter:
         y: 17
         width: 37
         height: 21
-      spriteId: 94a29a3372b58ec45af7616c55b4458d
+      spriteId: 2bceab0433ba9144083892d9c5bfec40
     linkedCells: []
     parentIndex: -1
   platformSettings: []

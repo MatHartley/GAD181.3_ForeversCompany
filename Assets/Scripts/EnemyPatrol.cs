@@ -28,7 +28,6 @@ public class EnemyPatrol : MonoBehaviour
         if (anim.GetBool("isDead"))
         {
             speed = 0;
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         else if (!anim.GetBool("isAttacking"))
         {

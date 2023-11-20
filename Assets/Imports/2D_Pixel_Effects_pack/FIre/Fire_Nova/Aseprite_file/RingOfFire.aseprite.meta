@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 82
       width: 27
       height: 28
-    spriteID: 801f0f93599b11c41b46be4f21075667
+    spriteID: 750e835e1316467409274f08af972d5c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 44
       width: 28
       height: 30
-    spriteID: 8ccf89f23bc692f40a0430eb38f06031
+    spriteID: 7c60b58571e62e646ab42e1f65691050
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 30
       height: 32
-    spriteID: d48235977119a604cafb6d559ac37b32
+    spriteID: a581a9a0b886f3949a15ef4910ec5505
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -195,7 +195,7 @@ ScriptedImporter:
         y: 15
         width: 27
         height: 28
-      spriteId: 801f0f93599b11c41b46be4f21075667
+      spriteId: 750e835e1316467409274f08af972d5c
     - name: RingOfFire_Frame_1
       frameIndex: 1
       cellRect:
@@ -203,7 +203,7 @@ ScriptedImporter:
         y: 15
         width: 28
         height: 30
-      spriteId: 8ccf89f23bc692f40a0430eb38f06031
+      spriteId: 7c60b58571e62e646ab42e1f65691050
     - name: RingOfFire_Frame_2
       frameIndex: 2
       cellRect:
@@ -211,7 +211,7 @@ ScriptedImporter:
         y: 15
         width: 30
         height: 32
-      spriteId: d48235977119a604cafb6d559ac37b32
+      spriteId: a581a9a0b886f3949a15ef4910ec5505
     linkedCells: []
     parentIndex: -1
   platformSettings: []

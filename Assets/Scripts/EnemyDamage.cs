@@ -18,6 +18,14 @@ public class EnemyDamage : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
+
+    private void Update()
+    {
+        if (anim.GetBool("isDead"))
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        }
+    }
     /// <summary>
     /// Deals damage if either of the players collide with the enemy
     /// </summary>
@@ -29,6 +37,7 @@ public class EnemyDamage : MonoBehaviour
             anim.SetBool("isAttacking", true);
             playerController = collision.gameObject.GetComponentInChildren<PlayerController>();
             playerController.knockbackCount = playerController.knockbackTime;
+
             if (collision.transform.position.x <= transform.position.x)
             {
                 LookLeft();

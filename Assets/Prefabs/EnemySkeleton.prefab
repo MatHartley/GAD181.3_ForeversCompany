@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4761770056541350404}
   - component: {fileID: 1991139935115076765}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0027500093, y: -0.002550006, z: 0}
-    m_Extent: {x: 1.00105, y: 1.00415, z: 0}
+    m_Center: {x: 0.0033000112, y: 0.004400015, z: 0}
+    m_Extent: {x: 1.0026, y: 0.9994, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -119,7 +119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5988185784707676156}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EnemySkeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1648626656766628728}
   - component: {fileID: 2439772436660465772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.007550001, y: 0.0024999976, z: 0}
-    m_Extent: {x: 0.99965, y: 0.9997, z: 0}
+    m_Center: {x: -0.00075000525, y: 0.005099982, z: 0}
+    m_Extent: {x: 1.00015, y: 1.0002999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -265,9 +265,8 @@ GameObject:
   - component: {fileID: 3301253695367964240}
   - component: {fileID: 2243763093891471223}
   - component: {fileID: 8481211725029916960}
-  - component: {fileID: 7168518079428780481}
   - component: {fileID: 1514341949105571387}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: skeleton_idle_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -423,23 +422,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7168518079428780481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7097005256954104431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f41c918a642628e4b896f9a9b0a3bfe6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  patrolDestination: 0
-  speed: 3
 --- !u!50 &1514341949105571387
 Rigidbody2D:
   serializedVersion: 4
@@ -448,11 +430,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7097005256954104431}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1

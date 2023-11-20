@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 33
       height: 34
-    spriteID: 6ca98a6fd17e1f04fbdf6df790e2387c
+    spriteID: ae93f93ea8730404094b8bc4e613f6df
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 124
       width: 33
       height: 34
-    spriteID: 5c937e511a5ab4d4dbb6c7af72d76a78
+    spriteID: b61f94e0bb97fae45bfe7f5f219ffe0d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 124
       width: 33
       height: 34
-    spriteID: b24430ca69044e54f997f971e019c0cb
+    spriteID: 5ab43a7507ec5e24ab47194556a6cb06
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 124
       width: 33
       height: 34
-    spriteID: 0c23fd2019643584f9b483c9ef571a4d
+    spriteID: fa15f4915ff5d804f8d4ba23beab912d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 124
       width: 33
       height: 34
-    spriteID: a5eac93eab308af478295f9b77ea57b3
+    spriteID: 44e66984e2480dd4d8624c1c0d621574
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 124
       width: 33
       height: 34
-    spriteID: 0769b0e615154c44482f73d361472d1f
+    spriteID: 13d4c34d41b4ffa4bb3ccbb686e57003
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 4
       width: 41
       height: 34
-    spriteID: 1715ce29dff4b2741ba8fc8eb372e51b
+    spriteID: 2905f127b2faa5148aad9e6754564587
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 63
       width: 40
       height: 41
-    spriteID: 4c1bbae2132f41046b5a8b9571398307
+    spriteID: dbd556e9f557fb04382489f06fb5af99
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 63
       width: 49
       height: 47
-    spriteID: 37dac1da7ac98ff40b685272520ff071
+    spriteID: b5d2066563103c7438a2cd714ee05ea9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 63
       width: 67
       height: 53
-    spriteID: 382344777167ed440b288f356b9950a5
+    spriteID: 12f75e09126afe54e94cb56069d7cda1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 63
       width: 64
       height: 52
-    spriteID: ba916604c2e1e2641a8b90e3242f870b
+    spriteID: 68d70380eb00bc54b822efcb135f8ba1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 4
       width: 70
       height: 51
-    spriteID: 6a9871e2130623e4f83f5796122895c5
+    spriteID: e31f5e625d0e4af4ea510bcadb2adbec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 4
       width: 51
       height: 38
-    spriteID: 64e37015f39193a4980c37fac442b396
+    spriteID: a05495b4da9d40145b7fa8174451f126
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 124
       width: 12
       height: 10
-    spriteID: e328a7a6e1d8e1d4d887c86a26240c7f
+    spriteID: 62c0f8c2d6263d949a3cf57a3fb920e7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -415,7 +415,7 @@ ScriptedImporter:
         y: 39
         width: 33
         height: 34
-      spriteId: 6ca98a6fd17e1f04fbdf6df790e2387c
+      spriteId: ae93f93ea8730404094b8bc4e613f6df
     - name: Rock_Explosion_Frame_1
       frameIndex: 1
       cellRect:
@@ -423,7 +423,7 @@ ScriptedImporter:
         y: 28
         width: 33
         height: 34
-      spriteId: 5c937e511a5ab4d4dbb6c7af72d76a78
+      spriteId: b61f94e0bb97fae45bfe7f5f219ffe0d
     - name: Rock_Explosion_Frame_2
       frameIndex: 2
       cellRect:
@@ -431,7 +431,7 @@ ScriptedImporter:
         y: 20
         width: 33
         height: 34
-      spriteId: b24430ca69044e54f997f971e019c0cb
+      spriteId: 5ab43a7507ec5e24ab47194556a6cb06
     - name: Rock_Explosion_Frame_3
       frameIndex: 3
       cellRect:
@@ -439,7 +439,7 @@ ScriptedImporter:
         y: 1
         width: 33
         height: 34
-      spriteId: 0c23fd2019643584f9b483c9ef571a4d
+      spriteId: fa15f4915ff5d804f8d4ba23beab912d
     - name: Rock_Explosion_Frame_4
       frameIndex: 4
       cellRect:
@@ -447,7 +447,7 @@ ScriptedImporter:
         y: 0
         width: 33
         height: 34
-      spriteId: a5eac93eab308af478295f9b77ea57b3
+      spriteId: 44e66984e2480dd4d8624c1c0d621574
     - name: Rock_Explosion_Frame_5
       frameIndex: 5
       cellRect:
@@ -455,7 +455,7 @@ ScriptedImporter:
         y: 0
         width: 33
         height: 34
-      spriteId: 0769b0e615154c44482f73d361472d1f
+      spriteId: 13d4c34d41b4ffa4bb3ccbb686e57003
     - name: Rock_Explosion_Frame_6
       frameIndex: 6
       cellRect:
@@ -463,7 +463,7 @@ ScriptedImporter:
         y: 0
         width: 41
         height: 34
-      spriteId: 1715ce29dff4b2741ba8fc8eb372e51b
+      spriteId: 2905f127b2faa5148aad9e6754564587
     - name: Rock_Explosion_Frame_7
       frameIndex: 7
       cellRect:
@@ -471,7 +471,7 @@ ScriptedImporter:
         y: 0
         width: 40
         height: 41
-      spriteId: 4c1bbae2132f41046b5a8b9571398307
+      spriteId: dbd556e9f557fb04382489f06fb5af99
     - name: Rock_Explosion_Frame_8
       frameIndex: 8
       cellRect:
@@ -479,7 +479,7 @@ ScriptedImporter:
         y: 0
         width: 49
         height: 47
-      spriteId: 37dac1da7ac98ff40b685272520ff071
+      spriteId: b5d2066563103c7438a2cd714ee05ea9
     - name: Rock_Explosion_Frame_9
       frameIndex: 9
       cellRect:
@@ -487,7 +487,7 @@ ScriptedImporter:
         y: 2
         width: 67
         height: 53
-      spriteId: 382344777167ed440b288f356b9950a5
+      spriteId: 12f75e09126afe54e94cb56069d7cda1
     - name: Rock_Explosion_Frame_10
       frameIndex: 10
       cellRect:
@@ -495,7 +495,7 @@ ScriptedImporter:
         y: 2
         width: 64
         height: 52
-      spriteId: ba916604c2e1e2641a8b90e3242f870b
+      spriteId: 68d70380eb00bc54b822efcb135f8ba1
     - name: Rock_Explosion_Frame_11
       frameIndex: 11
       cellRect:
@@ -503,7 +503,7 @@ ScriptedImporter:
         y: 4
         width: 70
         height: 51
-      spriteId: 6a9871e2130623e4f83f5796122895c5
+      spriteId: e31f5e625d0e4af4ea510bcadb2adbec
     - name: Rock_Explosion_Frame_12
       frameIndex: 12
       cellRect:
@@ -511,7 +511,7 @@ ScriptedImporter:
         y: 4
         width: 51
         height: 38
-      spriteId: 64e37015f39193a4980c37fac442b396
+      spriteId: a05495b4da9d40145b7fa8174451f126
     - name: Rock_Explosion_Frame_13
       frameIndex: 13
       cellRect:
@@ -519,7 +519,7 @@ ScriptedImporter:
         y: 32
         width: 12
         height: 10
-      spriteId: e328a7a6e1d8e1d4d887c86a26240c7f
+      spriteId: 62c0f8c2d6263d949a3cf57a3fb920e7
     linkedCells: []
     parentIndex: -1
   platformSettings: []

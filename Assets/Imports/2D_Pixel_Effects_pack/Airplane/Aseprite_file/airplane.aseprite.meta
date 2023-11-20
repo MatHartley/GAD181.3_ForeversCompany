@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 27
-    spriteID: 4ae6c01296850de4c8acac9e0337a407
+    spriteID: 82e47648cb8fd4d4f9e26c6dfd9bd384
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 39
       width: 26
       height: 29
-    spriteID: 403a4dbb769a5ce4f8e8c44b4d509ad5
+    spriteID: 54bbf20c634269448bfd06d6330b14e0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 76
       width: 18
       height: 30
-    spriteID: 28d21c208059b29488dfea016d4cbdb8
+    spriteID: 374d62f7747ba4c4f9d7fb2fc0dfc94a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 39
       width: 26
       height: 29
-    spriteID: 47f31450c331d39459613a5523a673dd
+    spriteID: f2e9341c60b5f3e42867832d434df7bf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 27
-    spriteID: 4db02b9a36eb62c4cb454daa3a6e3196
+    spriteID: e81acda91022148409f2d6049a00bf7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 39
       width: 26
       height: 29
-    spriteID: 852b7846e79183d46b7c4d16a3f0aed5
+    spriteID: a1afe383f98d59b4aa84ec82664dae99
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 76
       width: 18
       height: 30
-    spriteID: 244b922ac7fd8b448ba21a468e918376
+    spriteID: 74e1c5524ba0d7542b91b9664053def8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 76
       width: 26
       height: 29
-    spriteID: 1f49e083b1f83de4d99f79858a326097
+    spriteID: 379a16bc1cb219c4ba21af56b501cba2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 27
-    spriteID: 51c89efbef3658749867ea2f727d4f88
+    spriteID: e7c16cfdd7389af499fb3fb65dd73035
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 6
         width: 28
         height: 27
-      spriteId: 4ae6c01296850de4c8acac9e0337a407
+      spriteId: 82e47648cb8fd4d4f9e26c6dfd9bd384
     - name: airplane_Frame_1
       frameIndex: 1
       cellRect:
@@ -323,7 +323,7 @@ ScriptedImporter:
         y: 4
         width: 26
         height: 29
-      spriteId: 403a4dbb769a5ce4f8e8c44b4d509ad5
+      spriteId: 54bbf20c634269448bfd06d6330b14e0
     - name: airplane_Frame_2
       frameIndex: 2
       cellRect:
@@ -331,7 +331,7 @@ ScriptedImporter:
         y: 3
         width: 18
         height: 30
-      spriteId: 28d21c208059b29488dfea016d4cbdb8
+      spriteId: 374d62f7747ba4c4f9d7fb2fc0dfc94a
     - name: airplane_Frame_3
       frameIndex: 3
       cellRect:
@@ -339,7 +339,7 @@ ScriptedImporter:
         y: 4
         width: 26
         height: 29
-      spriteId: 47f31450c331d39459613a5523a673dd
+      spriteId: f2e9341c60b5f3e42867832d434df7bf
     - name: airplane_Frame_4
       frameIndex: 4
       cellRect:
@@ -347,7 +347,7 @@ ScriptedImporter:
         y: 6
         width: 28
         height: 27
-      spriteId: 4db02b9a36eb62c4cb454daa3a6e3196
+      spriteId: e81acda91022148409f2d6049a00bf7c
     - name: airplane_Frame_5
       frameIndex: 5
       cellRect:
@@ -355,7 +355,7 @@ ScriptedImporter:
         y: 4
         width: 26
         height: 29
-      spriteId: 852b7846e79183d46b7c4d16a3f0aed5
+      spriteId: a1afe383f98d59b4aa84ec82664dae99
     - name: airplane_Frame_6
       frameIndex: 6
       cellRect:
@@ -363,7 +363,7 @@ ScriptedImporter:
         y: 3
         width: 18
         height: 30
-      spriteId: 244b922ac7fd8b448ba21a468e918376
+      spriteId: 74e1c5524ba0d7542b91b9664053def8
     - name: airplane_Frame_7
       frameIndex: 7
       cellRect:
@@ -371,7 +371,7 @@ ScriptedImporter:
         y: 4
         width: 26
         height: 29
-      spriteId: 1f49e083b1f83de4d99f79858a326097
+      spriteId: 379a16bc1cb219c4ba21af56b501cba2
     - name: airplane_Frame_8
       frameIndex: 8
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         y: 6
         width: 28
         height: 27
-      spriteId: 51c89efbef3658749867ea2f727d4f88
+      spriteId: e7c16cfdd7389af499fb3fb65dd73035
     linkedCells: []
     parentIndex: -1
   platformSettings: []

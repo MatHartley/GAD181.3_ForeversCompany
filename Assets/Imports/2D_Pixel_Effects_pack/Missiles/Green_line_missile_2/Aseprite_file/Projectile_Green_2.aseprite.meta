@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 24
       height: 24
-    spriteID: bb450ceeb0efe594ea6e7dd3cac071c8
+    spriteID: 90151331ee2b8824ba43f8374dc63259
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 36
       width: 24
       height: 24
-    spriteID: b5944f3b12489cf428ea98675a932e3d
+    spriteID: 55095d11cee73d148a84f4bf7ff89f84
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -175,7 +175,7 @@ ScriptedImporter:
         y: 13
         width: 24
         height: 24
-      spriteId: bb450ceeb0efe594ea6e7dd3cac071c8
+      spriteId: 90151331ee2b8824ba43f8374dc63259
     - name: Projectile_Green_2_Frame_1
       frameIndex: 1
       cellRect:
@@ -183,7 +183,7 @@ ScriptedImporter:
         y: 13
         width: 24
         height: 24
-      spriteId: b5944f3b12489cf428ea98675a932e3d
+      spriteId: 55095d11cee73d148a84f4bf7ff89f84
     linkedCells: []
     parentIndex: -1
   platformSettings: []

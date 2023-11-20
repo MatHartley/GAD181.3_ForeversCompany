@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 33
       height: 33
-    spriteID: 2e9108dfb917c244281f2575165f54e9
+    spriteID: 6f8cff0353eeae74baf425c551e480ba
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 45
       width: 27
       height: 27
-    spriteID: fe0c112742a091f4d9c75dbc4416e3d6
+    spriteID: 751d6d3d87efdbb48bbfb0dca1007dc4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 80
       width: 27
       height: 27
-    spriteID: fb879243efd489b4b95ad39a509edf83
+    spriteID: eaf7b6f393fce1f40b903e14c58d7c3d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 4
       width: 27
       height: 27
-    spriteID: 5f63af3a618d3a047a12d2a5de78d1f7
+    spriteID: 06fcc148889f9d540b69f44a0c52d597
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -215,7 +215,7 @@ ScriptedImporter:
         y: 10
         width: 33
         height: 33
-      spriteId: 2e9108dfb917c244281f2575165f54e9
+      spriteId: 6f8cff0353eeae74baf425c551e480ba
     - name: Projectile_shuriken_blue_Frame_1
       frameIndex: 1
       cellRect:
@@ -223,7 +223,7 @@ ScriptedImporter:
         y: 13
         width: 27
         height: 27
-      spriteId: fe0c112742a091f4d9c75dbc4416e3d6
+      spriteId: 751d6d3d87efdbb48bbfb0dca1007dc4
     - name: Projectile_shuriken_blue_Frame_2
       frameIndex: 2
       cellRect:
@@ -231,7 +231,7 @@ ScriptedImporter:
         y: 13
         width: 27
         height: 27
-      spriteId: fb879243efd489b4b95ad39a509edf83
+      spriteId: eaf7b6f393fce1f40b903e14c58d7c3d
     - name: Projectile_shuriken_blue_Frame_3
       frameIndex: 3
       cellRect:
@@ -239,7 +239,7 @@ ScriptedImporter:
         y: 13
         width: 27
         height: 27
-      spriteId: 5f63af3a618d3a047a12d2a5de78d1f7
+      spriteId: 06fcc148889f9d540b69f44a0c52d597
     linkedCells: []
     parentIndex: -1
   platformSettings: []

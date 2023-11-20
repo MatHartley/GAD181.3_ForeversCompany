@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 23
       width: 9
       height: 9
-    spriteID: 32eb3dade66e1434e9a54a1761643b47
+    spriteID: d78f3e6e909e44844ad2c366ed9a7199
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 4
       width: 11
       height: 11
-    spriteID: 11949eca37893794bb1bb33bec71d471
+    spriteID: 212709f8b74a4394ba80ae5b0d64feb9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 104
       width: 13
       height: 13
-    spriteID: d4ba87b4658f9bc4f9287f50217dddbd
+    spriteID: 9e6672afb212bd34da43a856f47469f6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 4
       width: 17
       height: 17
-    spriteID: b52b482997078cd459322d8feaf46b89
+    spriteID: dd44acb220f37074c9489100d39d0129
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 29
       width: 17
       height: 17
-    spriteID: c638945c0af08e64a9bee795da38f70d
+    spriteID: 8626783ad6e8c4f49b3d83a09c8e0a71
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 54
       width: 17
       height: 17
-    spriteID: 9821ce821746a3c46adc445632c04a82
+    spriteID: 300ccb79ed21d7b4bb8b5d0a5fc1e183
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 79
       width: 17
       height: 17
-    spriteID: 2970efe68a831f3459e781defa5dd046
+    spriteID: dc10da8726ab70f4ea36b1c657e59003
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -275,7 +275,7 @@ ScriptedImporter:
         y: 12
         width: 9
         height: 9
-      spriteId: 32eb3dade66e1434e9a54a1761643b47
+      spriteId: d78f3e6e909e44844ad2c366ed9a7199
     - name: Green_Ring_Frame_1
       frameIndex: 1
       cellRect:
@@ -283,7 +283,7 @@ ScriptedImporter:
         y: 11
         width: 11
         height: 11
-      spriteId: 11949eca37893794bb1bb33bec71d471
+      spriteId: 212709f8b74a4394ba80ae5b0d64feb9
     - name: Green_Ring_Frame_2
       frameIndex: 2
       cellRect:
@@ -291,7 +291,7 @@ ScriptedImporter:
         y: 10
         width: 13
         height: 13
-      spriteId: d4ba87b4658f9bc4f9287f50217dddbd
+      spriteId: 9e6672afb212bd34da43a856f47469f6
     - name: Green_Ring_Frame_3
       frameIndex: 3
       cellRect:
@@ -299,7 +299,7 @@ ScriptedImporter:
         y: 8
         width: 17
         height: 17
-      spriteId: b52b482997078cd459322d8feaf46b89
+      spriteId: dd44acb220f37074c9489100d39d0129
     - name: Green_Ring_Frame_4
       frameIndex: 4
       cellRect:
@@ -307,7 +307,7 @@ ScriptedImporter:
         y: 8
         width: 17
         height: 17
-      spriteId: c638945c0af08e64a9bee795da38f70d
+      spriteId: 8626783ad6e8c4f49b3d83a09c8e0a71
     - name: Green_Ring_Frame_5
       frameIndex: 5
       cellRect:
@@ -315,7 +315,7 @@ ScriptedImporter:
         y: 8
         width: 17
         height: 17
-      spriteId: 9821ce821746a3c46adc445632c04a82
+      spriteId: 300ccb79ed21d7b4bb8b5d0a5fc1e183
     - name: Green_Ring_Frame_6
       frameIndex: 6
       cellRect:
@@ -323,7 +323,7 @@ ScriptedImporter:
         y: 8
         width: 17
         height: 17
-      spriteId: 2970efe68a831f3459e781defa5dd046
+      spriteId: dc10da8726ab70f4ea36b1c657e59003
     linkedCells: []
     parentIndex: -1
   platformSettings: []

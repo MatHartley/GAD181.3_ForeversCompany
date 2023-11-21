@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class HealthManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class HealthManager : MonoBehaviour
     public Slider leftSlider;
     public GameObject playerOne;
     public GameObject playerTwo;
+    public Transform player1;
+    public Transform player2;
 
     [Header("Materials")]
     public Material playerOneMat;
@@ -33,12 +36,16 @@ public class HealthManager : MonoBehaviour
     private bool safeguardActive = false;
     private int closeRange = 5;
 
+    public LineRenderer lineRenderer;
+
     /// <summary>
     /// Start sets the current health to the maximum health
     /// </summary>
     void Start()
     {
         currentHealth = maxHealth;
+
+        lineRenderer = GetComponent<LineRenderer>();
     }
 
     /// <summary>
@@ -46,6 +53,9 @@ public class HealthManager : MonoBehaviour
     /// </summary>
     void Update()
     {
+
+        lineRenderer.SetPosition(0, player1.position);
+        lineRenderer.SetPosition(1, player2.position);
         //checks if the players exist
         if (playerOne != null && playerTwo != null)
         {
@@ -56,6 +66,8 @@ public class HealthManager : MonoBehaviour
             if (playerDistance > closeRange)
             { 
                 DegenHealth();
+
+                lineRenderer.enabled = false;
                 if (!safeguardActive)
                 {
                     playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
@@ -71,8 +83,9 @@ public class HealthManager : MonoBehaviour
                 if (currentHealth < 100)
                 playerOneImmune = true;
                 playerTwoImmune = true;
-            }
 
+                lineRenderer.enabled = true;
+            }
         }
     }
 

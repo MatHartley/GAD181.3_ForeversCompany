@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Player1
   - Player2
+  - GM
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Cam2
   - Player
   - Enemy
-  - 
+  - Box
   - 
   - 
   - 

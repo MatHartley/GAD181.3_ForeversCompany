@@ -160,7 +160,7 @@
                 {
                     "name": "up",
                     "id": "11033e95-0214-4c88-a749-2cf189e5307f",
-                    "path": "<Keyboard>/p",
+                    "path": "<Keyboard>/numpad8",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -171,7 +171,7 @@
                 {
                     "name": "down",
                     "id": "caf1eb64-13d4-4f00-9ca5-1f086821adbe",
-                    "path": "<Keyboard>/semicolon",
+                    "path": "<Keyboard>/numpad5",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -182,7 +182,7 @@
                 {
                     "name": "left",
                     "id": "9f21d1e2-75fb-4cde-9592-7a5177ac706f",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/numpad4",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -193,7 +193,7 @@
                 {
                     "name": "right",
                     "id": "8e6275d3-e356-46de-b8dd-727bc23a917d",
-                    "path": "<Keyboard>/quote",
+                    "path": "<Keyboard>/numpad6",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -204,7 +204,7 @@
                 {
                     "name": "",
                     "id": "a877fd0c-327c-4c1a-9a9c-008d4d5bf58d",
-                    "path": "<Keyboard>/rightShift",
+                    "path": "<Keyboard>/numpadEnter",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -215,7 +215,7 @@
                 {
                     "name": "",
                     "id": "03a707be-f3cf-4690-8574-2afb0502b740",
-                    "path": "<Keyboard>/backslash",
+                    "path": "<Keyboard>/numpadPlus",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",

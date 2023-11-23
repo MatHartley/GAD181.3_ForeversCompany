@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 3943362129457147577}
   - component: {fileID: 380860046931248736}
   - component: {fileID: 414712353380531353}
-  - component: {fileID: 689524689391306435}
   - component: {fileID: 7271028626510638363}
   - component: {fileID: 5609301284392502783}
   - component: {fileID: 2113089467888975307}
@@ -193,22 +192,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &689524689391306435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250586734974280643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a20c68b48a190d46976aa49432692de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  chaseRange: 10
-  distanceToTarget: 0
-  speed: 3
 --- !u!114 &7271028626510638363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,9 +205,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
-  target: {fileID: 0}
+  targetPlayer: {fileID: 0}
   distanceToTarget: 0
   viewRange: 15
+  chaseRange: 10
+  speed: 2
+  isChasing: 0
   healthManager: {fileID: 0}
 --- !u!50 &5609301284392502783
 Rigidbody2D:

@@ -35,6 +35,7 @@ public class EnemyDamage : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             anim.SetBool("isAttacking", true);
+            Debug.Log("Attack");
             playerController = collision.gameObject.GetComponentInChildren<PlayerController>();
             playerController.knockbackCount = playerController.knockbackTime;
 

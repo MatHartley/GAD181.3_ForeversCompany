@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4761770056541350404}
   - component: {fileID: 1991139935115076765}
   m_Layer: 10
-  m_Name: Eye
+  m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0033000112, y: 0.004400015, z: 0}
-    m_Extent: {x: 1.0026, y: 0.9994, z: 0}
+    m_Center: {x: -0.002700001, y: -0.0022500157, z: 0}
+    m_Extent: {x: 0.99460006, y: 1.0064499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 1648626656766628728}
   - component: {fileID: 2439772436660465772}
   m_Layer: 10
-  m_Name: Eye
+  m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00075000525, y: 0.005099982, z: 0}
-    m_Extent: {x: 1.00015, y: 1.0002999, z: 0}
+    m_Center: {x: -0.0032000244, y: 0.008549988, z: 0}
+    m_Extent: {x: 1.0014, y: 0.99995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

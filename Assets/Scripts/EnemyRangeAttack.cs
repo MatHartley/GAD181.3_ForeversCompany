@@ -32,7 +32,6 @@ public class EnemyRangeAttack : MonoBehaviour
             //Check which player is closer and set them as the target
             if (Vector3.Distance(transform.position, playerOne.position) > Vector3.Distance(transform.position, playerTwo.position))
             {
-
                 target = playerTwo;
             }
             else

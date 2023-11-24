@@ -148,8 +148,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.007249981, y: 0.00020003319, z: 0}
-    m_Extent: {x: 1.00185, y: 1.0058, z: 0}
+    m_Center: {x: 0.00085002184, y: -0.0074500144, z: 0}
+    m_Extent: {x: 0.99855, y: 1.0007501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0032000244, y: -0.0035000145, z: 0}
-    m_Extent: {x: 0.9971, y: 1.0016, z: 0}
+    m_Center: {x: 0.002649963, y: -0.0040500164, z: 0}
+    m_Extent: {x: 1.0027499, y: 0.99815, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
   knockFromRight: 0
   projectilePrefab: {fileID: 4444142397034312168, guid: 89bb146326d0c5a4fa49a3f250dccf8a, type: 3}
   launchPoint: {fileID: 2801137291765773287}
-  shootTime: 2
+  shootTime: 1
   shootCount: 0
   healthManager: {fileID: 0}
 --- !u!114 &1762381557270378199

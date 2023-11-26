@@ -15,6 +15,9 @@ public class HealthManager : MonoBehaviour
     public GameObject playerTwo;
     public Transform player1;
     public Transform player2;
+    public GameObject deathPanel;
+    public TextMeshProUGUI deathText;
+    public SceneLoader sceneLoader;
 
     [Header("Materials")]
     public Material playerOneMat;
@@ -23,7 +26,7 @@ public class HealthManager : MonoBehaviour
     public Material regenMat;
 
     [Header("Health Variables")]
-    [Range(0,100)]
+    [Range(0, 100)]
     public float currentHealth;
     public float maxHealth = 100;
     public float playerDistance;
@@ -53,9 +56,9 @@ public class HealthManager : MonoBehaviour
     /// </summary>
     void Update()
     {
-
         lineRenderer.SetPosition(0, player1.position);
         lineRenderer.SetPosition(1, player2.position);
+
         //checks if the players exist
         if (playerOne != null && playerTwo != null)
         {
@@ -64,10 +67,11 @@ public class HealthManager : MonoBehaviour
 
             //if they are too far apart they start to loose health...
             if (playerDistance > closeRange)
-            { 
+            {
                 DegenHealth();
 
-                lineRenderer.enabled = false;
+                //lineRenderer.enabled = false;
+
                 if (!safeguardActive)
                 {
                     playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
@@ -81,11 +85,26 @@ public class HealthManager : MonoBehaviour
             {
                 RegenHealth();
                 if (currentHealth < 100)
-                playerOneImmune = true;
+                    playerOneImmune = true;
                 playerTwoImmune = true;
 
-                lineRenderer.enabled = true;
+                //lineRenderer.enabled = true;
             }
+        }
+
+        if (playerOne == null && playerTwo == null)
+        {
+            Color panelColor = deathPanel.GetComponent<Image>().color;
+            Color textColor = deathText.color;
+
+            panelColor.a += 0.5f * Time.deltaTime;
+            textColor.a += 0.5f * Time.deltaTime;
+
+            deathPanel.GetComponent<Image>().color = panelColor;
+            deathText.color = textColor;
+
+            Debug.Log("Calling GameOver");
+            StartCoroutine(GameOver());
         }
     }
 
@@ -116,11 +135,11 @@ public class HealthManager : MonoBehaviour
     /// </summary>
     public void RemoveSafeguard(GameObject playerTrigger)
     {
-            playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
-            playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
-            playerOneImmune = false;
-            playerTwoImmune = false;
-            safeguardActive = false;
+        playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
+        playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
+        playerOneImmune = false;
+        playerTwoImmune = false;
+        safeguardActive = false;
     }
 
     /// <summary>
@@ -134,7 +153,7 @@ public class HealthManager : MonoBehaviour
             currentHealth -= damage;
             CheckDeath();
             DisplayHealth();
-        } 
+        }
     }
 
     /// <summary>
@@ -172,7 +191,7 @@ public class HealthManager : MonoBehaviour
     /// <summary>
     /// CheckDeath checks to see if the health pool has reached zero, destroying the players if so
     /// </summary>
-     void CheckDeath()
+    void CheckDeath()
     {
         if (currentHealth <= 0)
         {
@@ -191,5 +210,13 @@ public class HealthManager : MonoBehaviour
         leftSlider.value = currentHealth;
         rightSlider.value = currentHealth;
         valueText.text = currentHealth.ToString("F0");
+    }
+
+    IEnumerator GameOver()
+    {
+        Debug.Log("Waiting");
+        yield return new WaitForSeconds(5f);
+        Debug.Log("Loading Game Over Menu");
+        sceneLoader.LoadGameOverMenu();
     }
 }

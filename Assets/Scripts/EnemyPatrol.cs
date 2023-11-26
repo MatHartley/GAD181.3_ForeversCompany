@@ -16,18 +16,32 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Private Variables")]
     private Animator anim;
 
-    [Header("Targetting Variables")]
+    [Header("Chasing Variables")]
+    public bool isChasing;
     public float chaseRange;
     public float distanceToTarget;
     public Transform target;
     public Transform playerOne;
     public Transform playerTwo;
-    public bool isChasing;
+
+    [Header ("Ledge Detection")]
+    public Transform ledgeDetector;
+    public LayerMask groundLayer;
+    public float downRayDistance;
+    public float sideRayDistance;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("isRunning", true);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private void Update()
+    {
+
     }
 
     /// <summary>
@@ -53,16 +67,33 @@ public class EnemyPatrol : MonoBehaviour
 
             distanceToTarget = Vector3.Distance(transform.position, target.position);
 
+            RaycastHit2D downHit = Physics2D.Raycast(ledgeDetector.position, Vector2.down, downRayDistance, groundLayer);
+            RaycastHit2D rightHit = Physics2D.Raycast(ledgeDetector.position, Vector2.right, sideRayDistance, groundLayer);
+
             if (isChasing)
             {
                 if (transform.position.x > target.position.x)
                 {
-                    transform.position += Vector3.left * chaseSpeed * Time.deltaTime;
+                    if (downHit.collider == null || rightHit.collider != null)
+                    {
+                        transform.position = transform.position;
+                    }
+                    else
+                    {
+                        transform.position += Vector3.left * chaseSpeed * Time.deltaTime;
+                    }
                     LookLeft();
                 }
                 if (transform.position.x < target.position.x)
                 {
-                    transform.position += Vector3.right * chaseSpeed * Time.deltaTime;
+                    if (downHit.collider == null || rightHit.collider != null)
+                    {
+                        transform.position = transform.position;
+                    }
+                    else
+                    {
+                        transform.position += Vector3.right * chaseSpeed * Time.deltaTime;
+                    }
                     LookRight();
                 }
 

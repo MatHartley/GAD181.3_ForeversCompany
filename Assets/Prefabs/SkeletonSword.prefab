@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0027500093, y: -0.005100012, z: 0}
-    m_Extent: {x: 0.99305, y: 1.0029, z: 0}
+    m_Center: {x: 0.0014000237, y: 0.00070002675, z: 0}
+    m_Extent: {x: 0.99890006, y: 1.0002, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0029500127, y: -0.00069999695, z: 0}
-    m_Extent: {x: 1.00295, y: 0.9969, z: 0}
+    m_Center: {x: 0.003700018, y: -0.0009999871, z: 0}
+    m_Extent: {x: 0.9954, y: 0.9996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -289,6 +289,7 @@ Transform:
   m_Children:
   - {fileID: 4761770056541350404}
   - {fileID: 1648626656766628728}
+  - {fileID: 4374336256531053388}
   m_Father: {fileID: 5988185784707676156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4232402223484903791
@@ -466,9 +467,46 @@ MonoBehaviour:
   patrolDestination: 0
   speed: 2
   chaseSpeed: 4
+  isChasing: 0
   chaseRange: 5
   distanceToTarget: 0
   target: {fileID: 0}
   playerOne: {fileID: 2293520778812463012, guid: 0dde78a641add274fafe155733a1d996, type: 3}
   playerTwo: {fileID: 9199771767152005268, guid: 90329be8ba484664b8df0499cf87fe87, type: 3}
-  isChasing: 0
+  ledgeDetector: {fileID: 4374336256531053388}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  downRayDistance: 1.5
+  sideRayDistance: 0.1
+--- !u!1 &8513782352619440226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4374336256531053388}
+  m_Layer: 10
+  m_Name: LedgeDetection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4374336256531053388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513782352619440226}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8950492306365687225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

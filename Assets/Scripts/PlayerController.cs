@@ -112,6 +112,7 @@ public class PlayerController : MonoBehaviour
     {
         if(context.performed)
         {
+            anim.SetBool("isGuarding", true);
             healthManager.ActivateSafeguard(gameObject);
             speed = 0f;
             Debug.Log(gameObject.name + " activated SAFEGUARD.");
@@ -119,6 +120,7 @@ public class PlayerController : MonoBehaviour
 
         if (context.canceled)
         {
+            anim.SetBool("isGuarding", false);
             healthManager.RemoveSafeguard(gameObject);
             speed = originSpeed;
             Debug.Log(gameObject.name + " deactivated SAFEGUARD.");
@@ -133,9 +135,14 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed && shootCount <= 0)
         {
+            anim.SetBool("isAttacking", true);
             projectilePrefab.GetComponent<PlayerProjectile>().SetSpeed(isFacingRight);
             Instantiate(projectilePrefab, launchPoint.position, Quaternion.identity);
             shootCount = shootTime;
+        }
+        else
+        {
+            anim.SetBool("isAttacking", false);
         }
     }
 }

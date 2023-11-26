@@ -24,6 +24,7 @@ public class HealthManager : MonoBehaviour
     public Material playerTwoMat;
     public Material safeguardMat;
     public Material regenMat;
+    public Material damageMat;
 
     [Header("Health Variables")]
     [Range(0, 100)]
@@ -37,6 +38,7 @@ public class HealthManager : MonoBehaviour
     private float healthDegenRate = 1.0f;
     private float healthRegenRate = 5.0f;
     private bool safeguardActive = false;
+    private bool takingDamage = false;
     private int closeRange = 5;
 
     public LineRenderer lineRenderer;
@@ -72,7 +74,7 @@ public class HealthManager : MonoBehaviour
 
                 //lineRenderer.enabled = false;
 
-                if (!safeguardActive)
+                if (!safeguardActive && !takingDamage)
                 {
                     playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
                     playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
@@ -150,6 +152,7 @@ public class HealthManager : MonoBehaviour
     {
         if ((reciever.name == "Player1" && !playerOneImmune) || (reciever.name == "Player2" && !playerTwoImmune))
         {
+            StartCoroutine(DamageEffect(reciever));
             currentHealth -= damage;
             CheckDeath();
             DisplayHealth();
@@ -210,6 +213,33 @@ public class HealthManager : MonoBehaviour
         leftSlider.value = currentHealth;
         rightSlider.value = currentHealth;
         valueText.text = currentHealth.ToString("F0");
+    }
+
+    IEnumerator DamageEffect(GameObject reciever)
+    {
+        takingDamage = true;
+        if (reciever.name == "Player1")
+        {
+            Debug.Log("Player 1 hit");
+            playerOne.GetComponent<SpriteRenderer>().material = damageMat;
+        }
+        else
+        {
+            playerTwo.GetComponent<SpriteRenderer>().material = damageMat;
+        }
+
+        yield return new WaitForSeconds(0.2f);
+
+        if (reciever.name == "Player1")
+        {
+            Debug.Log("Player 1 mat return");
+            playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
+        }
+        else
+        {
+            playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
+        }
+        takingDamage = false;
     }
 
     IEnumerator GameOver()

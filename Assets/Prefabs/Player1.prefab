@@ -148,8 +148,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.003549993, y: 0.0011000037, z: 0}
-    m_Extent: {x: 1.00225, y: 0.9976, z: 0}
+    m_Center: {x: -0.005000025, y: 0.0039000213, z: 0}
+    m_Extent: {x: 0.99820006, y: 0.9964, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0064499676, y: 0.0022500157, z: 0}
-    m_Extent: {x: 0.99535, y: 1.0058501, z: 0}
+    m_Center: {x: -0.00049999356, y: 0, z: 0}
+    m_Extent: {x: 0.9965, y: 1.0047, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -636,8 +636,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c3b93e45-e75d-497b-b801-c5ffa58b2ab2
     m_ActionName: Player2/Fire[/Keyboard/backslash]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

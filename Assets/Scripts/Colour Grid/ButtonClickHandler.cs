@@ -1,37 +1,110 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class ButtonClickHandler : MonoBehaviour
 {
-    public SpriteRandomizer spriteRandomizer; // Reference to the SpriteRandomizer script
-    private Image buttonImage; // Reference to the Image component of the button
+    public HealthManager HealthManager;
+    private float damage = 10f;
+
+    public SpriteRandomizer spriteRandomizer;
+    private Image triggerImage;
+
+    public GameObject patternDoor;
+
+    private bool canPick;
+
+    private bool playerInside;
+    private float timeInside;
+
+    private bool hasInteracted;
+
+    public GameObject incorrect;
+    public GameObject correct;
 
     void Start()
     {
-        // Get the Image component of the button
-        buttonImage = GetComponent<Image>();
+        triggerImage = GetComponent<Image>();
+
+        if (triggerImage == null)
+        {
+            Debug.LogError("Image component not found on the button!");
+        }
+
+        canPick = true;
+
+        hasInteracted = false;
     }
 
-    public void OnButtonClick()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if spriteRandomizer is not null and buttonImage is not null
-        if (spriteRandomizer != null && buttonImage != null)
+        if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
-            // Check if the clicked button's sprite matches the current random sprite
-            if (spriteRandomizer.IsCorrectSprite(buttonImage.sprite))
+            playerInside = true;
+            timeInside = 0f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player1") || other.CompareTag("Player2"))
+        {
+            playerInside = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (playerInside)
+        {
+            timeInside += Time.deltaTime;
+
+            if (timeInside >= 3f && !hasInteracted)
             {
-                Debug.Log("Correct button clicked!");
-                // Do something when the correct button is clicked
-            }
-            else
-            {
-                Debug.Log("Incorrect button clicked!");
-                // Do something when an incorrect button is clicked
+                if (spriteRandomizer != null && triggerImage != null)
+                {
+                    if (spriteRandomizer.IsCorrectSprite(triggerImage.sprite) && canPick)
+                    {
+                        StartCoroutine(DelayedCorrect());
+                        hasInteracted = true;
+                    }
+                    else
+                    {
+                        StartCoroutine(DelayedWrong());
+                        hasInteracted = true;
+                    }
+                }
+                else
+                {
+                    Debug.LogError("SpriteRandomizer or buttonImage is null!");
+                }
             }
         }
-        else
-        {
-            Debug.LogError("SpriteRandomizer or buttonImage is null!");
-        }
+    }
+    private IEnumerator DelayedCorrect()
+    {
+        correct.SetActive(true);
+        canPick = false;
+        Debug.Log("Correct button clicked!");
+
+        patternDoor.SetActive(false);
+
+        yield return new WaitForSeconds(2f);
+        correct.SetActive(false);
+        canPick = true;
+        hasInteracted = false;
+    }
+
+    private IEnumerator DelayedWrong()
+    {
+        incorrect.SetActive(true);
+        canPick = false;
+        Debug.Log("Wrong button clicked!");
+        HealthManager.currentHealth -= damage;
+
+        yield return new WaitForSeconds(2f);
+        incorrect.SetActive(false);
+        canPick = true;
+        hasInteracted = false;
     }
 }

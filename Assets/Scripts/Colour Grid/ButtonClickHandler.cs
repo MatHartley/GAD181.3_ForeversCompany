@@ -41,7 +41,6 @@ public class ButtonClickHandler : MonoBehaviour
         if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
             playerInside = true;
-            timeInside = 0f;
         }
     }
 
@@ -57,26 +56,28 @@ public class ButtonClickHandler : MonoBehaviour
     {
         if (playerInside)
         {
-            timeInside += Time.deltaTime;
-
-            if (timeInside >= 3f && !hasInteracted)
+            // Check if the button is pressed instead of using time-based trigger
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Keypad7))
             {
-                if (spriteRandomizer != null && triggerImage != null)
+                if (!hasInteracted)
                 {
-                    if (spriteRandomizer.IsCorrectSprite(triggerImage.sprite) && canPick)
+                    if (spriteRandomizer != null && triggerImage != null)
                     {
-                        StartCoroutine(DelayedCorrect());
-                        hasInteracted = true;
+                        if (spriteRandomizer.IsCorrectSprite(triggerImage.sprite) && canPick)
+                        {
+                            StartCoroutine(DelayedCorrect());
+                            hasInteracted = true;
+                        }
+                        else
+                        {
+                            StartCoroutine(DelayedWrong());
+                            hasInteracted = true;
+                        }
                     }
                     else
                     {
-                        StartCoroutine(DelayedWrong());
-                        hasInteracted = true;
+                        Debug.LogError("SpriteRandomizer or buttonImage is null!");
                     }
-                }
-                else
-                {
-                    Debug.LogError("SpriteRandomizer or buttonImage is null!");
                 }
             }
         }

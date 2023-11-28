@@ -21,8 +21,8 @@ TagManager:
   - Player
   - Enemy
   - Box
-  - 
-  - 
+  - Player1PassThrough
+  - Player2PassThrough
   - 
   - 
   - 

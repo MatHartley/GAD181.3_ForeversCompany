@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public GameMaster gameMaster;
+
+
+    void Start()
+    {
+        gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+    }
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -18,5 +25,15 @@ public class SceneLoader : MonoBehaviour
     public void LoadPlaytest()
     {
         SceneManager.LoadScene("PlaytestScene");
+    }
+
+    public void LoadLast()
+    {
+        // Make sure gameMaster is not null before calling LoadSavedData
+        if (gameMaster != null)
+        {
+            gameMaster.LoadSavedData();
+            SceneManager.LoadScene("PlaytestScene");
+        }
     }
 }

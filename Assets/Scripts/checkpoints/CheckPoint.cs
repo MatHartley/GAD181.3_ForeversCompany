@@ -18,6 +18,7 @@ public class CheckPoint : MonoBehaviour
         {
             gm.lastCheckPointPos = transform.position;
             skullLight.SetActive(true);
+            gm.SaveData();
         }
     }
 }

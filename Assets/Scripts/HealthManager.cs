@@ -12,8 +12,8 @@ public class HealthManager : MonoBehaviour
     public Slider leftSlider;
     public GameObject playerOne;
     public GameObject playerTwo;
-    public Transform player1;
-    public Transform player2;
+    public Transform playerOneTransform;
+    public Transform playerTwoTransform;
     public GameObject deathPanel;
     public TextMeshProUGUI deathText;
     public SceneLoader sceneLoader;
@@ -57,8 +57,8 @@ public class HealthManager : MonoBehaviour
     /// </summary>
     void Update()
     {
-        lineRenderer.SetPosition(0, player1.position);
-        lineRenderer.SetPosition(1, player2.position);
+        lineRenderer.SetPosition(0, playerOneTransform.position);
+        lineRenderer.SetPosition(1, playerTwoTransform.position);
 
         //checks if the players exist
         if (playerOne != null && playerTwo != null)

@@ -16,7 +16,6 @@ Material:
   - GRADIENTCOLORRAMP_ON
   - OUTBASE8DIR_ON
   - OUTBASEPIXELPERF_ON
-  - OUTBASE_ON
   m_InvalidKeywords:
   - ETC1_EXTERNAL_ALPHA
   - _OUTLINE8DIRECTIONS_ON
@@ -83,7 +82,7 @@ Material:
     - _Alpha: 0.8
     - _AlphaCutoffValue: 0.25
     - _AlphaOutlineBlend: 1
-    - _AlphaOutlineGlow: 77.9
+    - _AlphaOutlineGlow: 58.8
     - _AlphaOutlineMinAlpha: 0
     - _AlphaOutlinePower: 1
     - _AlphaRoundThreshold: 0.5

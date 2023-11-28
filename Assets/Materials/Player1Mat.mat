@@ -16,7 +16,6 @@ Material:
   - GRADIENTCOLORRAMP_ON
   - OUTBASE8DIR_ON
   - OUTBASEPIXELPERF_ON
-  - OUTBASE_ON
   m_InvalidKeywords:
   - ETC1_EXTERNAL_ALPHA
   - _OUTLINE8DIRECTIONS_ON
@@ -177,7 +176,7 @@ Material:
     - _OutlineDistortTexXSpeed: 5
     - _OutlineDistortTexYSpeed: 5
     - _OutlineDistortToggle: 0
-    - _OutlineGlow: 6
+    - _OutlineGlow: 1.5
     - _OutlineIsPixel: 0
     - _OutlinePixelWidth: 5
     - _OutlineTexGrey: 0
@@ -251,7 +250,7 @@ Material:
     - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
     - _HologramStripeColor: {r: 0, g: 1, b: 1, a: 1}
     - _InnerOutlineColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0.6179246, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}

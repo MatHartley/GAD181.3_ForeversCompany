@@ -66732,6 +66732,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952351273238799033, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7992538267638860895, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -66814,7 +66818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616406009194903963, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -66823,13 +66827,13 @@ PrefabInstance:
     - {fileID: 5129625260298612896, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2354589779975456128, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 2022534815}
     - targetCorrespondingSourceObject: {fileID: 2354589779975456128, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 1910486192}
     - targetCorrespondingSourceObject: {fileID: 2354589779975456128, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 439431749}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a06348f9ef6266c448617ae0522160e3, type: 3}

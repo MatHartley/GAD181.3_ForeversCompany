@@ -24,12 +24,11 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadPlaytest()
     {
-        SceneManager.LoadScene("PlaytestScene");
+        SceneManager.LoadScene("World1Building");
     }
 
     public void LoadLast()
     {
-        // Make sure gameMaster is not null before calling LoadSavedData
         if (gameMaster != null)
         {
             gameMaster.LoadSavedData();

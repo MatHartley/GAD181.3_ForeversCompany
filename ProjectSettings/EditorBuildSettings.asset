@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 3323ad8b8d3eb694eae49a173f5df2a4
   - enabled: 1
-    path: Assets/Scenes/PlaytestScene.unity
-    guid: 880157d36bdc5a545858559bcc7bbb7b
+    path: Assets/Scenes/World1Building.unity
+    guid: a2c6be4db6d60714e8c494957f6ed656
+  - enabled: 1
+    path: Assets/Scenes/World2Building.unity
+    guid: fa5b35afc0b8a734c8042e73d67ec1b6
   - enabled: 1
     path: Assets/Scenes/GameOverMenu.unity
     guid: cfb0270eb94ae264dab61ec85402ced4

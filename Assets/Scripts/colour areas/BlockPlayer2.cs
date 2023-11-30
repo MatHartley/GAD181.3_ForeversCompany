@@ -4,37 +4,26 @@ using UnityEngine;
 
 public class BlockPlayer2 : MonoBehaviour
 {
-    public GameObject player1;
+    private Collider2D myCollider;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Start()
     {
-        if (CompareTag("Player1"))
-        {
-            Debug.Log("Player1 can pass through the wall.");
+        myCollider = GetComponent<Collider2D>();
+    }
 
-            Collider2D player1Collider = player1.GetComponent<BoxCollider2D>();
-            if (player1Collider != null)
-            {
-                player1Collider.isTrigger = true;
-            }
-        }
-        else if (CompareTag("Player2"))
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player2"))
         {
-            Debug.Log("Player2 cannot pass through the wall.");
+            myCollider.isTrigger = !myCollider.isTrigger;
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        if (collision.collider.CompareTag("Player2"))
         {
-            if (CompareTag("Player1"))
-            {
-                Collider2D player1Collider = player1.GetComponent<BoxCollider2D>();
-                if (player1Collider != null)
-                {
-                    player1Collider.isTrigger = false;
-                }
-            }
+            myCollider.isTrigger = !myCollider.isTrigger;
         }
     }
 }

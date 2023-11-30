@@ -21,10 +21,10 @@ TagManager:
   - Player
   - Enemy
   - Box
-  - Player1PassThrough
-  - Player2PassThrough
-  - 
-  - 
+  - Player1
+  - Player2
+  - Wall1
+  - Wall2
   - 
   - 
   - 

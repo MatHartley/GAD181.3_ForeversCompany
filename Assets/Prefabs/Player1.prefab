@@ -148,8 +148,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.007499963, y: -0.001249969, z: 0}
-    m_Extent: {x: 0.9994, y: 1.00435, z: 0}
+    m_Center: {x: -0.0075499713, y: 0.00455001, z: 0}
+    m_Extent: {x: 0.99784994, y: 1.0014501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0022500157, y: 0.00055003166, z: 0}
-    m_Extent: {x: 1.00455, y: 1.00465, z: 0}
+    m_Center: {x: -0.0022500157, y: 0.00049996376, z: 0}
+    m_Extent: {x: 0.99465, y: 1.0028, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -312,6 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2293520778812463012}
   - component: {fileID: 1255737849976870343}
+  - component: {fileID: 8547372167846096668}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -362,6 +363,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8547372167846096668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5629123598305907024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa1b3bfa0ca40f48aff8858997cff9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5886768998676102260
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +514,19 @@ MonoBehaviour:
   anim: {fileID: 678863740797578061}
   speed: 5
   originSpeed: 5
+  reelSpeed: 1.5
   isFacingRight: 1
+  reelingIn: 0
+  boostSpeed: 10
+  specialTime: 5
+  specialCount: 0
+  cooldownTime: 15
+  cooldownCount: 0
+  isFast: 0
+  isEthereal: 0
+  specialReady: 1
+  playerOneMat: {fileID: 2100000, guid: f7996d9458e2b6841b90c14b2a0a095b, type: 2}
+  etherealMat: {fileID: 2100000, guid: 8296f3f85a9bb05419c903fe44522e5f, type: 2}
   knockbackForce: 5
   knockbackCount: 0
   knockbackTime: 0.2
@@ -553,7 +578,19 @@ MonoBehaviour:
     m_ActionId: f60ffeeb-6e92-4203-8f61-d332afb02347
     m_ActionName: Player1/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0c6ca3d3-716e-4628-b404-54c2c6a2e14d
     m_ActionName: Player2/Move[/Keyboard/i,/Keyboard/k,/Keyboard/j]
   - m_PersistentCalls:
@@ -613,7 +650,19 @@ MonoBehaviour:
     m_ActionId: e7a80e46-d80d-4ac6-999f-3ef42ff3809c
     m_ActionName: Player1/Safeguard[/Keyboard/leftAlt]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Safeguard
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3f0c2a24-ffc1-48d1-a5f7-0ab058ba7a03
     m_ActionName: Player2/Safeguard[/Keyboard/numpad0]
   - m_PersistentCalls:
@@ -633,9 +682,117 @@ MonoBehaviour:
     m_ActionId: 8f002b82-7602-4ea7-94cc-fd508bb33473
     m_ActionName: Player1/Fire[/Keyboard/tab]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c3b93e45-e75d-497b-b801-c5ffa58b2ab2
     m_ActionName: Player2/Fire[/Keyboard/backslash]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5829510744810300282}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4bc806a2-1ad4-472a-947e-f58b89eb5316
+    m_ActionName: Player1/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5829510744810300282}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Special
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 103cd74b-ff36-4999-b498-f1d02cdfc438
+    m_ActionName: Player1/Special[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 36c954cb-6874-4b33-84a3-797fddb33be6
+    m_ActionName: Player2/Interact[/Keyboard/numpad7]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Special
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0d974948-7f9d-4fe5-bcc6-c655f583d4f8
+    m_ActionName: Player2/Special[/Keyboard/numpad9]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5829510744810300282}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: ReelIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6586cdeb-788a-444f-83dd-ead4d929c4e1
+    m_ActionName: Player1/Reel In[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5829510744810300282}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: ReelIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 54b155ab-6fb5-4c36-bce9-7bec45b6acad
+    m_ActionName: Player2/Reel In[/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player1

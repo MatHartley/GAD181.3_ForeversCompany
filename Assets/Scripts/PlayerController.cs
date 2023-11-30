@@ -14,6 +14,20 @@ public class PlayerController : MonoBehaviour
     public bool isFacingRight = true;
     public bool reelingIn = false;
 
+    [Header("Special")]
+    public float boostSpeed;
+    public float specialTime;
+    public float specialCount;
+    public float cooldownTime;
+    public float cooldownCount;
+    public bool isFast = false;
+    public bool isEthereal = false;
+    public bool specialReady = true;
+
+    [Header("Materials")]
+    public Material standardMat;
+    public Material specialMat;
+
     [Header("Knockback")]
     public float knockbackForce;
     public float knockbackCount;
@@ -42,10 +56,46 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         shootCount -= Time.deltaTime;
+        specialCount -= Time.deltaTime;
 
+        //Reel In ability
         if (reelingIn)
         {
             healthManager.ReelIn(reelSpeed);
+        }
+
+        //Speed boost special ability
+        if (isFast)
+        {
+            speed = boostSpeed;
+            gameObject.GetComponent<SpriteRenderer>().material = specialMat;
+
+            if (specialCount <= 0)
+            {
+                isFast = false;
+                speed = originSpeed;
+            }
+        }
+        //Ethereal special ability
+        if (isEthereal)
+        {
+            gameObject.GetComponent<SpriteRenderer>().material = specialMat;
+            gameObject.GetComponent<Collider2D>().enabled = false;
+
+            if (specialCount <= 0)
+            {
+                isEthereal = false;
+                gameObject.GetComponent<Collider2D>().enabled = true;
+            }
+        }
+
+        if (!specialReady)
+        {
+            cooldownCount -= Time.deltaTime;
+            if (cooldownCount <= 0)
+            {
+                specialReady = true;
+            }
         }
     }
 
@@ -93,6 +143,18 @@ public class PlayerController : MonoBehaviour
         Vector3 localScale = gameObject.transform.localScale;
         localScale.x *= -1f;
         gameObject.transform.localScale = localScale;
+    }
+
+    private void GoEthereal()
+    {
+        specialCount = specialTime;
+        isEthereal = true;
+    }
+
+    private void GoFast()
+    {
+        specialCount = specialTime;
+        isFast = true;
     }
 
     /// <summary>
@@ -162,9 +224,17 @@ public class PlayerController : MonoBehaviour
     }
     public void Special(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && gameObject.name == "Player1" && specialReady)
         {
-
+            GoEthereal();
+            specialReady = false;
+            cooldownCount = cooldownTime;
+        }
+        else if (context.performed && gameObject.name == "Player2" && specialReady)
+        {
+            GoFast();
+            specialReady = false;
+            cooldownCount = cooldownTime;
         }
     }
 

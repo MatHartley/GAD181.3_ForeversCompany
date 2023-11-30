@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9174718039697532131}
   - component: {fileID: 2738999151568951387}
+  - component: {fileID: 1924037182671555049}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: GM
@@ -44,4 +45,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7176a942621d1b845803766074205797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckPointPos: {x: -3.49, y: -6.274858}
+  lastCheckPointPos: {x: 39.97, y: -35.95}
+--- !u!114 &1924037182671555049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414580383335240149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e55b1de4d16e0243b83d3bbe30af8b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseScreen: {fileID: 0}

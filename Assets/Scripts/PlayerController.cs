@@ -8,9 +8,25 @@ public class PlayerController : MonoBehaviour
     [Header("Player Movement")]
     public Rigidbody2D rigidBody;
     public Animator anim;
-    public float speed = 5f;
-    public float originSpeed = 5f;
+    public float speed;
+    public float originSpeed;
+    public float reelSpeed;
     public bool isFacingRight = true;
+    public bool reelingIn = false;
+
+    [Header("Special")]
+    public float boostSpeed;
+    public float specialTime;
+    public float specialCount;
+    public float cooldownTime;
+    public float cooldownCount;
+    public bool isFast = false;
+    public bool isEthereal = false;
+    public bool specialReady = true;
+
+    [Header("Materials")]
+    public Material standardMat;
+    public Material specialMat;
 
     [Header("Knockback")]
     public float knockbackForce;
@@ -34,12 +50,53 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         shootCount = shootTime;
-        speed = originSpeed;
+        originSpeed = speed;
     }
 
     void Update()
     {
         shootCount -= Time.deltaTime;
+        specialCount -= Time.deltaTime;
+
+        //Reel In ability
+        if (reelingIn)
+        {
+            healthManager.ReelIn(reelSpeed);
+        }
+
+        //Speed boost special ability
+        if (isFast)
+        {
+            speed = boostSpeed;
+            gameObject.GetComponent<SpriteRenderer>().material = specialMat;
+
+            if (specialCount <= 0)
+            {
+                isFast = false;
+                speed = originSpeed;
+            }
+        }
+        //Ethereal special ability
+        if (isEthereal)
+        {
+            gameObject.GetComponent<SpriteRenderer>().material = specialMat;
+            gameObject.GetComponent<Collider2D>().enabled = false;
+
+            if (specialCount <= 0)
+            {
+                isEthereal = false;
+                gameObject.GetComponent<Collider2D>().enabled = true;
+            }
+        }
+
+        if (!specialReady)
+        {
+            cooldownCount -= Time.deltaTime;
+            if (cooldownCount <= 0)
+            {
+                specialReady = true;
+            }
+        }
     }
 
     /// <summary>
@@ -71,7 +128,7 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-        else if (isFacingRight && horizontal <0f)
+        else if (isFacingRight && horizontal < 0f)
         {
             Flip();
         }
@@ -88,6 +145,18 @@ public class PlayerController : MonoBehaviour
         gameObject.transform.localScale = localScale;
     }
 
+    private void GoEthereal()
+    {
+        specialCount = specialTime;
+        isEthereal = true;
+    }
+
+    private void GoFast()
+    {
+        specialCount = specialTime;
+        isFast = true;
+    }
+
     /// <summary>
     /// Move sets the horizontal and vertical movement directions based on user input
     /// </summary>
@@ -95,9 +164,9 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
 
-            anim.SetBool("isMoving", true);
-            horizontal = context.ReadValue<Vector2>().x;
-            vertical = context.ReadValue<Vector2>().y;
+        anim.SetBool("isMoving", true);
+        horizontal = context.ReadValue<Vector2>().x;
+        vertical = context.ReadValue<Vector2>().y;
 
         if (context.canceled)
         {
@@ -110,7 +179,7 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void Safeguard(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
         {
             anim.SetBool("isGuarding", true);
             healthManager.ActivateSafeguard(gameObject);
@@ -143,6 +212,41 @@ public class PlayerController : MonoBehaviour
         else
         {
             anim.SetBool("isAttacking", false);
+        }
+    }
+
+    public void Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+
+        }
+    }
+    public void Special(InputAction.CallbackContext context)
+    {
+        if (context.performed && gameObject.name == "Player1" && specialReady)
+        {
+            GoEthereal();
+            specialReady = false;
+            cooldownCount = cooldownTime;
+        }
+        else if (context.performed && gameObject.name == "Player2" && specialReady)
+        {
+            GoFast();
+            specialReady = false;
+            cooldownCount = cooldownTime;
+        }
+    }
+
+    public void ReelIn(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            reelingIn = true;
+        }
+        else
+        {
+            reelingIn = false;
         }
     }
 }

@@ -21,9 +21,12 @@ public class EnemyDamage : MonoBehaviour
 
     private void Update()
     {
-        if (anim.GetBool("isDead"))
+        if (anim != null)
         {
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            if (anim.GetBool("isDead"))
+            {
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
     }
     /// <summary>

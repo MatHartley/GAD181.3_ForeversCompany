@@ -20,10 +20,6 @@ public class TwoPlayerTrigger : MonoBehaviour
                 OpenDoors();
             }
         }
-        else
-        {
-            Debug.Log("Waiting on button clicks");
-        }
     }
 
     // OnTriggerEnter2D is called when a collider enters the trigger zone

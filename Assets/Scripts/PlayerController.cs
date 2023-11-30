@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
     [Header("Player Movement")]
     public Rigidbody2D rigidBody;
     public Animator anim;
-    public float speed = 5f;
-    public float originSpeed = 5f;
+    public float speed;
+    public float originSpeed;
+    public float reelSpeed;
     public bool isFacingRight = true;
+    public bool reelingIn = false;
 
     [Header("Knockback")]
     public float knockbackForce;
@@ -34,12 +36,17 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         shootCount = shootTime;
-        speed = originSpeed;
+        originSpeed = speed;
     }
 
     void Update()
     {
         shootCount -= Time.deltaTime;
+
+        if (reelingIn)
+        {
+            healthManager.ReelIn(reelSpeed);
+        }
     }
 
     /// <summary>
@@ -71,7 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-        else if (isFacingRight && horizontal <0f)
+        else if (isFacingRight && horizontal < 0f)
         {
             Flip();
         }
@@ -95,9 +102,9 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
 
-            anim.SetBool("isMoving", true);
-            horizontal = context.ReadValue<Vector2>().x;
-            vertical = context.ReadValue<Vector2>().y;
+        anim.SetBool("isMoving", true);
+        horizontal = context.ReadValue<Vector2>().x;
+        vertical = context.ReadValue<Vector2>().y;
 
         if (context.canceled)
         {
@@ -110,7 +117,7 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void Safeguard(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
         {
             anim.SetBool("isGuarding", true);
             healthManager.ActivateSafeguard(gameObject);
@@ -143,6 +150,33 @@ public class PlayerController : MonoBehaviour
         else
         {
             anim.SetBool("isAttacking", false);
+        }
+    }
+
+    public void Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+
+        }
+    }
+    public void Special(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+
+        }
+    }
+
+    public void ReelIn(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            reelingIn = true;
+        }
+        else
+        {
+            reelingIn = false;
         }
     }
 }

@@ -214,6 +214,12 @@ public class HealthManager : MonoBehaviour
         valueText.text = currentHealth.ToString("F0");
     }
 
+    public void ReelIn(float reelSpeed)
+    {
+        playerOneTransform.position = Vector2.MoveTowards(playerOneTransform.position, playerTwoTransform.position, reelSpeed * Time.deltaTime);
+        playerTwoTransform.position = Vector2.MoveTowards(playerTwoTransform.position, playerOneTransform.position, reelSpeed * Time.deltaTime);
+    }
+
     IEnumerator DamageEffect(GameObject reciever)
     {
         takingDamage = true;

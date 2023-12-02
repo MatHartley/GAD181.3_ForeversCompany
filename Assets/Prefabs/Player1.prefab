@@ -148,8 +148,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0075499713, y: 0.00455001, z: 0}
-    m_Extent: {x: 0.99784994, y: 1.0014501, z: 0}
+    m_Center: {x: -0.0011999607, y: -0.008450031, z: 0}
+    m_Extent: {x: 1.0072, y: 0.99835, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0022500157, y: 0.00049996376, z: 0}
-    m_Extent: {x: 0.99465, y: 1.0028, z: 0}
+    m_Center: {x: -0.005799979, y: -0.001050055, z: 0}
+    m_Extent: {x: 1.0012, y: 1.0014501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -488,7 +488,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a804be3422d62df4d8cbd661563a5beb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -525,8 +525,8 @@ MonoBehaviour:
   isFast: 0
   isEthereal: 0
   specialReady: 1
-  playerOneMat: {fileID: 2100000, guid: f7996d9458e2b6841b90c14b2a0a095b, type: 2}
-  etherealMat: {fileID: 2100000, guid: 8296f3f85a9bb05419c903fe44522e5f, type: 2}
+  standardMat: {fileID: 2100000, guid: f7996d9458e2b6841b90c14b2a0a095b, type: 2}
+  specialMat: {fileID: 2100000, guid: f7996d9458e2b6841b90c14b2a0a095b, type: 2}
   knockbackForce: 5
   knockbackCount: 0
   knockbackTime: 0.2

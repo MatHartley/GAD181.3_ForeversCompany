@@ -712,7 +712,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: dustyroom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad239334efa53d24c87ce614b6ac6789, type: 2}
   m_sharedMaterial: {fileID: 7296849571644579280, guid: ad239334efa53d24c87ce614b6ac6789, type: 2}
@@ -7457,7 +7457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: oliver girardot
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad239334efa53d24c87ce614b6ac6789, type: 2}
   m_sharedMaterial: {fileID: 7296849571644579280, guid: ad239334efa53d24c87ce614b6ac6789, type: 2}

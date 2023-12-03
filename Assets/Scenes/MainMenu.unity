@@ -7429,7 +7429,7 @@ GameObject:
   - component: {fileID: 1401845623}
   - component: {fileID: 1401845622}
   m_Layer: 5
-  m_Name: BMouseNavigation
+  m_Name: B.MouseNavigation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8178,7 +8178,7 @@ GameObject:
   - component: {fileID: 1506794327}
   - component: {fileID: 1506794326}
   m_Layer: 5
-  m_Name: B.LoadCheckpoint
+  m_Name: B.Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8223,7 +8223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOAD CHECKPOINT
+  m_text: PAUSE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad239334efa53d24c87ce614b6ac6789, type: 2}
   m_sharedMaterial: {fileID: 7296849571644579280, guid: ad239334efa53d24c87ce614b6ac6789, type: 2}
@@ -9511,7 +9511,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: e5643a5d49f7bbf4aadbe37206f70b62, type: 3}
     - target: {fileID: 114604369937241004, guid: 5131754af739541a7a443bd0498d5498, type: 3}
       propertyPath: m_Interactable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114604369937241004, guid: 5131754af739541a7a443bd0498d5498, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

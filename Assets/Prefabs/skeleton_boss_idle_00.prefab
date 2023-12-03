@@ -508,4 +508,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 7658015541568447859, guid: 377cf89c4710c3d448064b4e30969af3, type: 3}

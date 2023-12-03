@@ -9,7 +9,7 @@ public class ContextText : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
         {
             contextText.SetActive(true);
         }
@@ -17,7 +17,7 @@ public class ContextText : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
         {
             contextText.SetActive(false);
         }

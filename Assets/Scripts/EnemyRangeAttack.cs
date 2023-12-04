@@ -22,6 +22,9 @@ public class EnemyRangeAttack : MonoBehaviour
     public float shootTime;
     public float shootCount;
 
+    [Header("SFX")]
+    public AudioSource spellSFX;
+
     public Animator anim;
 
     // Update is called once per frame
@@ -72,6 +75,7 @@ public class EnemyRangeAttack : MonoBehaviour
                     if (hit.transform == target)
                     {
                         anim.SetBool("isCasting", true);
+                        spellSFX.Play();
                         GameObject newShot = Instantiate(projectilePrefab, launchPoint.position, launchPoint.rotation);
                         shootCount = shootTime;
                         StartCoroutine(WaitForTime(0.5f));

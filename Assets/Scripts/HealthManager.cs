@@ -25,6 +25,9 @@ public class HealthManager : MonoBehaviour
     public Material regenMat;
     public Material damageMat;
 
+    [Header("SFX")]
+    public AudioSource damageSFX;
+
     [Header("Health Variables")]
     [Range(0, 100)]
     public float currentHealth;
@@ -153,6 +156,7 @@ public class HealthManager : MonoBehaviour
         {
             StartCoroutine(DamageEffect(reciever));
             currentHealth -= damage;
+            damageSFX.Play();
             CheckDeath();
             DisplayHealth();
         }

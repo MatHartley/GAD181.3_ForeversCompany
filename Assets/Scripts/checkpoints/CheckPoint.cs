@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
+    [Header("VFX")]
     public GameObject skullLight;
+
+    [Header("SFX")]
+    public AudioSource checkpointSFX;
+
+    [Header("Private")]
     private GameMaster gm;
 
     private void Start()
@@ -18,6 +24,7 @@ public class CheckPoint : MonoBehaviour
         {
             gm.lastCheckPointPos = transform.position;
             skullLight.SetActive(true);
+            checkpointSFX.Play();
             gm.SaveData();
         }
     }

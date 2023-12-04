@@ -43,6 +43,9 @@ public class PlayerController : MonoBehaviour
     [Header("Scripts")]
     public HealthManager healthManager;
 
+    [Header("SFX")]
+    public AudioSource shotSFX;
+
     [Header("Private Variables")]
     private float horizontal;
     private float vertical;
@@ -214,6 +217,7 @@ public class PlayerController : MonoBehaviour
             projectilePrefab.GetComponent<PlayerProjectile>().SetSpeed(isFacingRight);
             Instantiate(projectilePrefab, launchPoint.position, Quaternion.identity);
             shootCount = shootTime;
+            shotSFX.Play();
         }
         else
         {

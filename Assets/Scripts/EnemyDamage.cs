@@ -11,6 +11,10 @@ public class EnemyDamage : MonoBehaviour
     public HealthManager healthManager;
     private PlayerController playerController;
 
+    [Header("SFX")]
+    public AudioSource attackSFX;
+    public AudioSource deathSFX;
+
     [Header("Animation")]
     private Animator anim;
 
@@ -38,6 +42,7 @@ public class EnemyDamage : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             anim.SetBool("isAttacking", true);
+            attackSFX.Play();
             Debug.Log("Attack");
             playerController = collision.gameObject.GetComponentInChildren<PlayerController>();
             playerController.knockbackCount = playerController.knockbackTime;

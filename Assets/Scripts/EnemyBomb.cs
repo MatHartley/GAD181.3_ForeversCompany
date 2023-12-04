@@ -22,6 +22,9 @@ public class EnemyBomb : MonoBehaviour
     public HealthManager healthManager;
     private PlayerController playerController;
 
+    [Header("SFX")]
+    public AudioSource fireballSFX;
+
     [Header("Animation")]
     private Animator anim;
 
@@ -131,6 +134,7 @@ public class EnemyBomb : MonoBehaviour
 
     IEnumerator WaitForTime(float time)
     {
+        fireballSFX.Play();
         yield return new WaitForSeconds(time);
         gameObject.SetActive(false);
     }

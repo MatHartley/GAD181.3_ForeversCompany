@@ -98,6 +98,7 @@ public class EnemyBomb : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            fireballSFX.Play();
             anim.SetBool("isDead", true);
             gameObject.GetComponent<Collider2D>().enabled = false;
             playerController = collision.gameObject.GetComponentInChildren<PlayerController>();
@@ -134,7 +135,6 @@ public class EnemyBomb : MonoBehaviour
 
     IEnumerator WaitForTime(float time)
     {
-        fireballSFX.Play();
         yield return new WaitForSeconds(time);
         gameObject.SetActive(false);
     }

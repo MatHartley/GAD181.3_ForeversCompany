@@ -48,6 +48,14 @@ public class PlayerProjectile : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Animator>().SetBool("isDead", true);
+            if (collision.gameObject.GetComponent<EnemyDamage>())
+            {
+                collision.gameObject.GetComponent<EnemyDamage>().deathSFX.Play();
+            }
+            else if (collision.gameObject.GetComponent<EnemyBomb>())
+            {
+                collision.gameObject.GetComponent<EnemyBomb>().fireballSFX.Play();
+            }
         }
         Destroy(gameObject);
     }

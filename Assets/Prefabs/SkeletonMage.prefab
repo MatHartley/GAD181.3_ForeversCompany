@@ -227,7 +227,7 @@ MonoBehaviour:
   launchPoint: {fileID: 6452264478932457762}
   shootTime: 2
   shootCount: 0
-  spellSFX: {fileID: 0}
+  spellSFX: {fileID: 5850427853218094685}
   anim: {fileID: 177449280179273758}
 --- !u!1 &1032936761829344425
 GameObject:
@@ -423,8 +423,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0070500076, y: 0.00395, z: 0}
-    m_Extent: {x: 0.99895, y: 1.00095, z: 0}
+    m_Center: {x: 0.002849996, y: -0.0043500066, z: 0}
+    m_Extent: {x: 0.99665, y: 0.99995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -937,8 +937,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00045001507, y: -0.0048000216, z: 0}
-    m_Extent: {x: 0.99535, y: 0.9968, z: 0}
+    m_Center: {x: 0.0029500127, y: 0.0019499958, z: 0}
+    m_Extent: {x: 1.00365, y: 0.99934995, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

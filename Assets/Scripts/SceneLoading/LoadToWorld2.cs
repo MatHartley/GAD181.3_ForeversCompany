@@ -8,6 +8,9 @@ public class LoadToWorld2 : MonoBehaviour
 {
     public GameMaster gameMaster;
 
+    public GameObject everthing;
+    public GameObject Loading;
+
     private void Start()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -27,7 +30,8 @@ public class LoadToWorld2 : MonoBehaviour
 
     IEnumerator LoadWorld2()
     {
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("World2Building");
+        yield return new WaitForSeconds(2f);
+        Loading.SetActive(true);
+        everthing.SetActive(false);
     }
 }

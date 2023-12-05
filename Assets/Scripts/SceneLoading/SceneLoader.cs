@@ -22,9 +22,9 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("GameOverMenu");
     }
 
-    public void LoadPlaytest()
+    public void LoadGame()
     {
-        SceneManager.LoadScene("World1Building");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void LoadLast()

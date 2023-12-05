@@ -6913,10 +6913,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 749427878875481744, guid: 16823937023ae484db9a2241741f5fda, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16823937023ae484db9a2241741f5fda, type: 3}
 --- !u!1 &681165061 stripped
 GameObject:
@@ -11373,10 +11370,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 749427878875481744, guid: 16823937023ae484db9a2241741f5fda, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16823937023ae484db9a2241741f5fda, type: 3}
 --- !u!1 &1057650529 stripped
 GameObject:
@@ -13073,6 +13067,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   healthManager: {fileID: 430062438}
+  attackSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
 --- !u!1 &1169547675
 GameObject:
   m_ObjectHideFlags: 0
@@ -13218,6 +13214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182866690}
   - component: {fileID: 1182866691}
+  - component: {fileID: 1182866692}
   m_Layer: 0
   m_Name: dead_skeleton_3
   m_TagString: Untagged
@@ -13292,6 +13289,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1182866692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182866689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2d2ff4d60e8254ead2287dff4a0e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorObjects:
+  - {fileID: 587080595}
+  - {fileID: 1164392376}
+  - {fileID: 496410618}
+  - {fileID: 315369035}
+  - {fileID: 293377468}
+  - {fileID: 1747727699}
+  - {fileID: 875417439}
 --- !u!1 &1185207800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8616406009194903963, guid: a06348f9ef6266c448617ae0522160e3, type: 3}
@@ -41158,6 +41175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773809313}
   - component: {fileID: 1773809314}
+  - component: {fileID: 1773809315}
   m_Layer: 0
   m_Name: dead_skeleton_3
   m_TagString: Untagged
@@ -41232,6 +41250,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1773809315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773809312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b5d5ccf4d72214897d5582e61dd435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorObjects:
+  - {fileID: 174521080}
+  - {fileID: 1525254332}
+  - {fileID: 1305913149}
+  - {fileID: 1660770463}
+  - {fileID: 548141029}
+  - {fileID: 873519291}
+  - {fileID: 1746516487}
 --- !u!1001 &1778933573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50012,6 +50050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2109065279}
   - component: {fileID: 2109065280}
+  - component: {fileID: 2109065281}
   m_Layer: 0
   m_Name: dead_skeleton_3
   m_TagString: Untagged
@@ -50086,6 +50125,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2109065281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109065278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c048cd13842842a43acc24be2321203a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorObjects:
+  - {fileID: 1591220867}
+  - {fileID: 1822886305}
+  - {fileID: 1855659133}
+  - {fileID: 1734906075}
+  - {fileID: 410233965}
+  - {fileID: 849430590}
+  - {fileID: 1136173552}
 --- !u!4 &2112405475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3513248301965442015, guid: b1c7b5fb8f2bdb44da088bcfaa358abb, type: 3}

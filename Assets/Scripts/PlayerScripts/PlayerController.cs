@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public bool isFast = false;
     public bool isEthereal = false;
     public bool specialReady = true;
+    public GameObject specialDisplay;
 
     [Header("Materials")]
     public Material standardMat;
@@ -104,6 +106,18 @@ public class PlayerController : MonoBehaviour
             if (cooldownCount <= 0)
             {
                 specialReady = true;
+                if (gameObject.name == "Player1")
+                {
+                    Color specialColor = specialDisplay.gameObject.GetComponent<Image>().color;
+                    specialColor.r = 0; specialColor.g = 255; specialColor.b = 255;
+                    specialDisplay.gameObject.GetComponent<Image>().color = specialColor;
+                }
+                else if (gameObject.name == "Player2")
+                {
+                    Color specialColor = specialDisplay.gameObject.GetComponent<Image>().color;
+                    specialColor.r = 255; specialColor.g = 255; specialColor.b = 0;
+                    specialDisplay.gameObject.GetComponent<Image>().color = specialColor;
+                }
             }
         }
     }
@@ -158,12 +172,21 @@ public class PlayerController : MonoBehaviour
     {
         specialCount = specialTime;
         isEthereal = true;
+        SpecialColourBlack();
     }
 
     private void GoFast()
     {
         specialCount = specialTime;
         isFast = true;
+        SpecialColourBlack();
+    }
+
+    void SpecialColourBlack()
+    {
+        Color specialColor = specialDisplay.gameObject.GetComponent<Image>().color;
+        specialColor.r = 0; specialColor.g = 0; specialColor.b = 0;
+        specialDisplay.gameObject.GetComponent<Image>().color = specialColor;
     }
 
     /// <summary>

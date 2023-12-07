@@ -12,6 +12,7 @@ public class CheckPoint : MonoBehaviour
 
     [Header("Private")]
     private GameMaster gm;
+    private bool isActive = false;
 
     private void Start()
     {
@@ -22,10 +23,19 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
-            gm.lastCheckPointPos = transform.position;
-            skullLight.SetActive(true);
-            checkpointSFX.Play();
-            gm.SaveData();
+            if (!isActive)
+            {
+                gm.lastCheckPointPos = transform.position;
+                skullLight.SetActive(true);
+                checkpointSFX.Play();
+                gm.SaveData();
+                isActive = true;
+            }
+            else
+            {
+                gm.lastCheckPointPos = transform.position;
+                gm.SaveData();
+            }
         }
     }
 }

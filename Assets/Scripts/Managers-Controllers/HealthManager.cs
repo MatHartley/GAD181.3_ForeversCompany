@@ -27,6 +27,8 @@ public class HealthManager : MonoBehaviour
 
     [Header("SFX")]
     public AudioSource damageSFX;
+    public AudioSource warningSFX;
+    public AudioSource regenSFX;
 
     [Header("Health Variables")]
     [Range(0, 100)]
@@ -88,8 +90,8 @@ public class HealthManager : MonoBehaviour
             else if (playerDistance < closeRange)
             {
                 RegenHealth();
-                if (currentHealth < 100)
-                    playerOneImmune = true;
+
+                playerOneImmune = true;
                 playerTwoImmune = true;
 
                 //lineRenderer.enabled = true;
@@ -159,6 +161,10 @@ public class HealthManager : MonoBehaviour
             damageSFX.Play();
             CheckDeath();
             DisplayHealth();
+            if (currentHealth < 50)
+            {
+                warningSFX.Play();
+            }
         }
     }
 
@@ -172,6 +178,10 @@ public class HealthManager : MonoBehaviour
             currentHealth -= (healthDegenRate * Time.deltaTime);
             CheckDeath();
             DisplayHealth();
+            if (currentHealth < 50)
+            {
+                warningSFX.Play();
+            }
         }
     }
 
@@ -182,6 +192,7 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth < 100)
         {
+            regenSFX.Play();
             playerOne.GetComponent<SpriteRenderer>().material = regenMat;
             playerTwo.GetComponent<SpriteRenderer>().material = regenMat;
             currentHealth += (healthRegenRate * Time.deltaTime);
@@ -189,6 +200,7 @@ public class HealthManager : MonoBehaviour
         }
         else
         {
+            regenSFX.Stop();
             playerOne.GetComponent<SpriteRenderer>().material = safeguardMat;
             playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat;
         }

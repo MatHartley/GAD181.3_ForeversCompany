@@ -48,6 +48,8 @@ public class PlayerController : MonoBehaviour
     [Header("SFX")]
     public AudioSource shotSFX;
     public AudioSource specialSFX;
+    public AudioSource specialUpSFX;
+    public AudioSource safeguardSFX;
 
     [Header("Private Variables")]
     private float horizontal;
@@ -107,6 +109,7 @@ public class PlayerController : MonoBehaviour
             if (cooldownCount <= 0)
             {
                 specialReady = true;
+                specialUpSFX.Play();
                 if (gameObject.name == "Player1")
                 {
                     Color specialColor = specialDisplay.gameObject.GetComponent<Image>().color;
@@ -216,6 +219,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed)
         {
+            safeguardSFX.Play();
             anim.SetBool("isGuarding", true);
             healthManager.ActivateSafeguard(gameObject);
             speed = 0f;
@@ -224,6 +228,7 @@ public class PlayerController : MonoBehaviour
 
         if (context.canceled)
         {
+            safeguardSFX.Stop();
             anim.SetBool("isGuarding", false);
             healthManager.RemoveSafeguard(gameObject);
             speed = originSpeed;

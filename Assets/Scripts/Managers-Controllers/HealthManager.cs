@@ -29,6 +29,7 @@ public class HealthManager : MonoBehaviour
     public AudioSource damageSFX;
     public AudioSource warningSFX;
     public AudioSource regenSFX;
+    public AudioSource safeguardSFX;
 
     [Header("Health Variables")]
     [Range(0, 100)]
@@ -75,6 +76,7 @@ public class HealthManager : MonoBehaviour
             if (playerDistance > closeRange)
             {
                 DegenHealth();
+                safeguardSFX.Stop();
 
                 //lineRenderer.enabled = false;
 
@@ -93,7 +95,7 @@ public class HealthManager : MonoBehaviour
 
                 playerOneImmune = true;
                 playerTwoImmune = true;
-
+                safeguardSFX.Play();
                 //lineRenderer.enabled = true;
             }
         }

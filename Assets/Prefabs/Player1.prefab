@@ -148,8 +148,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0014500022, y: 0.00040000677, z: 0}
-    m_Extent: {x: 1.00265, y: 1.0027001, z: 0}
+    m_Center: {x: 0.002550006, y: -0.0029500127, z: 0}
+    m_Extent: {x: 1.00185, y: 1.00365, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -386,8 +386,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0033499599, y: 0.004450023, z: 0}
-    m_Extent: {x: 1.0064499, y: 1.00215, z: 0}
+    m_Center: {x: -0.003549993, y: -0.00064998865, z: 0}
+    m_Extent: {x: 1.0048499, y: 1.0051501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -668,6 +668,7 @@ MonoBehaviour:
   shootCount: 0
   healthManager: {fileID: 0}
   shotSFX: {fileID: 709283392286262990}
+  specialSFX: {fileID: 2028528315392634553}
 --- !u!114 &1762381557270378199
 MonoBehaviour:
   m_ObjectHideFlags: 0

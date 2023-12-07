@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("SFX")]
     public AudioSource shotSFX;
+    public AudioSource specialSFX;
 
     [Header("Private Variables")]
     private float horizontal;
@@ -173,6 +174,7 @@ public class PlayerController : MonoBehaviour
         specialCount = specialTime;
         isEthereal = true;
         SpecialColourBlack();
+        specialSFX.Play();
     }
 
     private void GoFast()
@@ -180,6 +182,7 @@ public class PlayerController : MonoBehaviour
         specialCount = specialTime;
         isFast = true;
         SpecialColourBlack();
+        specialSFX.Play();
     }
 
     void SpecialColourBlack()

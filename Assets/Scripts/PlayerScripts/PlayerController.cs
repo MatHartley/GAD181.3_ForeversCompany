@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         //Ethereal special ability
         if (isEthereal)
         {
-            gameObject.GetComponent<SpriteRenderer>().material = specialMat;
+            //gameObject.GetComponent<SpriteRenderer>().material = specialMat;
             Color etherealColor = gameObject.GetComponent<SpriteRenderer>().color;
             etherealColor.a = 0f;
             gameObject.GetComponent<SpriteRenderer>().color = etherealColor;

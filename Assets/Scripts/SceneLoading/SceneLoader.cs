@@ -22,6 +22,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("GameOverMenu");
     }
 
+    public void LoadEndGameMenu()
+    {
+        SceneManager.LoadScene("EndGameMenu");
+    }
+
     public void LoadGame()
     {
         SceneManager.LoadScene("GameScene");

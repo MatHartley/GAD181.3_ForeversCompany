@@ -29,7 +29,6 @@ public class HealthManager : MonoBehaviour
     public AudioSource damageSFX;
     public AudioSource warningSFX;
     public AudioSource regenSFX;
-    public AudioSource safeguardSFX;
 
     [Header("Health Variables")]
     [Range(0, 100)]
@@ -45,6 +44,8 @@ public class HealthManager : MonoBehaviour
     private bool safeguardActive = false;
     private bool takingDamage = false;
     private int closeRange = 5;
+    private bool isRegenOn = false;
+    private bool warningGiven = false;
 
     public LineRenderer lineRenderer;
 
@@ -76,7 +77,6 @@ public class HealthManager : MonoBehaviour
             if (playerDistance > closeRange)
             {
                 DegenHealth();
-                safeguardSFX.Stop();
 
                 //lineRenderer.enabled = false;
 
@@ -95,8 +95,26 @@ public class HealthManager : MonoBehaviour
 
                 playerOneImmune = true;
                 playerTwoImmune = true;
-                safeguardSFX.Play();
                 //lineRenderer.enabled = true;
+            }
+
+            if (currentHealth < 50 && !warningGiven)
+            {
+                warningGiven = true;
+                warningSFX.Play();
+            }
+            else if (currentHealth >= 50 && warningGiven)
+            {
+                warningGiven = false;
+            }
+
+            if (isRegenOn)
+            {
+                regenSFX.Play();
+            }
+            else
+            {
+                regenSFX.Stop();
             }
         }
 
@@ -163,10 +181,6 @@ public class HealthManager : MonoBehaviour
             damageSFX.Play();
             CheckDeath();
             DisplayHealth();
-            if (currentHealth < 50)
-            {
-                warningSFX.Play();
-            }
         }
     }
 
@@ -180,10 +194,6 @@ public class HealthManager : MonoBehaviour
             currentHealth -= (healthDegenRate * Time.deltaTime);
             CheckDeath();
             DisplayHealth();
-            if (currentHealth < 50)
-            {
-                warningSFX.Play();
-            }
         }
     }
 
@@ -194,7 +204,7 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth < 100)
         {
-            regenSFX.Play();
+            isRegenOn = true;
             playerOne.GetComponent<SpriteRenderer>().material = regenMat;
             playerTwo.GetComponent<SpriteRenderer>().material = regenMat;
             currentHealth += (healthRegenRate * Time.deltaTime);
@@ -202,7 +212,7 @@ public class HealthManager : MonoBehaviour
         }
         else
         {
-            regenSFX.Stop();
+            isRegenOn = false;
             playerOne.GetComponent<SpriteRenderer>().material = safeguardMat;
             playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat;
         }

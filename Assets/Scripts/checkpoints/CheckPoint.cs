@@ -25,17 +25,17 @@ public class CheckPoint : MonoBehaviour
         {
             if (!isActive)
             {
-                gm.lastCheckPointPos = transform.position;
+                //gm.lastCheckPointPos = transform.position;
                 skullLight.SetActive(true);
                 checkpointSFX.Play();
-                gm.SaveData();
+                //gm.SaveData();
                 isActive = true;
             }
-            else
-            {
-                gm.lastCheckPointPos = transform.position;
-                gm.SaveData();
-            }
+            //else
+            //{
+            //    gm.lastCheckPointPos = transform.position;
+            //    gm.SaveData();
+            //}
         }
     }
 }

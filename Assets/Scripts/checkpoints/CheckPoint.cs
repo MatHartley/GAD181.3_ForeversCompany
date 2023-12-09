@@ -16,7 +16,7 @@ public class CheckPoint : MonoBehaviour
 
     private void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        //gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     void OnTriggerEnter2D(Collider2D other)

@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
-        gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        //gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
     public void LoadMainMenu()
     {

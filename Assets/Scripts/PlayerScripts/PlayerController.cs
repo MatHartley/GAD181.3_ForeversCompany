@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         //Ethereal special ability
         if (isEthereal)
         {
-            //gameObject.GetComponent<SpriteRenderer>().material = specialMat;
+            gameObject.GetComponent<SpriteRenderer>().material = specialMat;
             Color etherealColor = gameObject.GetComponent<SpriteRenderer>().color;
             etherealColor.a = 0f;
             gameObject.GetComponent<SpriteRenderer>().color = etherealColor;
@@ -172,6 +172,9 @@ public class PlayerController : MonoBehaviour
         gameObject.transform.localScale = localScale;
     }
 
+    /// <summary>
+    /// GoEthereal sets the cooldown for player 1's special, activates it, deactivated the indicator, and plays a sound effect
+    /// </summary>
     private void GoEthereal()
     {
         specialCount = specialTime;
@@ -180,6 +183,9 @@ public class PlayerController : MonoBehaviour
         specialSFX.Play();
     }
 
+    /// <summary>
+    /// GoFast sets the cooldown for player 2's special, activates it, deactivated the indicator, and plays a sound effect
+    /// </summary>
     private void GoFast()
     {
         specialCount = specialTime;
@@ -188,6 +194,9 @@ public class PlayerController : MonoBehaviour
         specialSFX.Play();
     }
 
+    /// <summary>
+    /// SpecialColourBlack sets the colour of the used ability's indicator to black, showing it has been used
+    /// </summary>
     void SpecialColourBlack()
     {
         Color specialColor = specialDisplay.gameObject.GetComponent<Image>().color;
@@ -256,6 +265,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Interact allows players to activate buttons and solve puzzles - not used - puzzles were scripted by Matt.G to use the Input Manager
+    /// </summary>
+    /// <param name="context"></param>
     public void Interact(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -263,6 +276,10 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+    /// <summary>
+    /// Special activates a players unique special ability
+    /// </summary>
     public void Special(InputAction.CallbackContext context)
     {
         if (context.performed && gameObject.name == "Player1" && specialReady)
@@ -279,6 +296,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// ReelIn activates the reelingIn boolean, which is used to call the ReelIn function from the Health Manager
+    /// </summary>
     public void ReelIn(InputAction.CallbackContext context)
     {
         if (context.performed)

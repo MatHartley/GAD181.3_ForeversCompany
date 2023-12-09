@@ -44,9 +44,10 @@ public class HealthManager : MonoBehaviour
     private bool safeguardActive = false;
     private bool takingDamage = false;
     private int closeRange = 5;
-    private bool isRegenOn = false;
+    private bool regenOn = false;
     private bool warningGiven = false;
 
+    [Header("Tether")]
     public LineRenderer lineRenderer;
 
     /// <summary>
@@ -95,9 +96,22 @@ public class HealthManager : MonoBehaviour
 
                 playerOneImmune = true;
                 playerTwoImmune = true;
-                //lineRenderer.enabled = true;
             }
 
+            //I don't know why this isn't working - it's processing the debug.logs correctly, but the sound isn't playing - Mat.H
+            // While regen is occuring, plays a sound effect
+            if (regenOn)
+            {
+                regenSFX.Play();
+                Debug.Log("Playing Regen SFX");
+            }
+            else
+            {
+                regenSFX.Stop();
+                Debug.Log("Stopping Regen SFX");
+            }
+
+            // Plays a warning noise if health drops below 50
             if (currentHealth < 50 && !warningGiven)
             {
                 warningGiven = true;
@@ -107,17 +121,8 @@ public class HealthManager : MonoBehaviour
             {
                 warningGiven = false;
             }
-
-            if (isRegenOn)
-            {
-                regenSFX.Play();
-            }
-            else
-            {
-                regenSFX.Stop();
-            }
         }
-
+        //Fades to black using a panel, then calls the game over coroutine to end the game
         if (playerOne == null && playerTwo == null)
         {
             Color panelColor = deathPanel.GetComponent<Image>().color;
@@ -141,16 +146,18 @@ public class HealthManager : MonoBehaviour
     {
         if (playerDistance > closeRange)
         {
+            //If player 1 triggers safeguard...
             if (playerTrigger.name == "Player1")
             {
-                playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat;
-                playerTwoImmune = true;
+                playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat; //...changes player 2's material to glow white...
+                playerTwoImmune = true; //...and makes them immune to damage
                 safeguardActive = true;
             }
+            //If player 2 triggers safeguard...
             else if (playerTrigger.name == "Player2")
             {
-                playerOne.GetComponent<SpriteRenderer>().material = safeguardMat;
-                playerOneImmune = true;
+                playerOne.GetComponent<SpriteRenderer>().material = safeguardMat; //...changes player 1's material to glow white...
+                playerOneImmune = true; //...and makes them immune to damage
                 safeguardActive = true;
             }
         }
@@ -174,6 +181,7 @@ public class HealthManager : MonoBehaviour
     /// <param name="damage"></param>
     public void TakeDamage(int damage, GameObject reciever)
     {
+        //Checks wether the player recieving the damage is immune
         if ((reciever.name == "Player1" && !playerOneImmune) || (reciever.name == "Player2" && !playerTwoImmune))
         {
             StartCoroutine(DamageEffect(reciever));
@@ -204,7 +212,7 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth < 100)
         {
-            isRegenOn = true;
+            regenOn = true;
             playerOne.GetComponent<SpriteRenderer>().material = regenMat;
             playerTwo.GetComponent<SpriteRenderer>().material = regenMat;
             currentHealth += (healthRegenRate * Time.deltaTime);
@@ -212,7 +220,7 @@ public class HealthManager : MonoBehaviour
         }
         else
         {
-            isRegenOn = false;
+            regenOn = false;
             playerOne.GetComponent<SpriteRenderer>().material = safeguardMat;
             playerTwo.GetComponent<SpriteRenderer>().material = safeguardMat;
         }
@@ -242,39 +250,55 @@ public class HealthManager : MonoBehaviour
         valueText.text = currentHealth.ToString("F0");
     }
 
+    /// <summary>
+    /// ReelIn causes each player to move toward the other
+    /// </summary>
+    /// <param name="reelSpeed"></param>
     public void ReelIn(float reelSpeed)
     {
         playerOneTransform.position = Vector2.MoveTowards(playerOneTransform.position, playerTwoTransform.position, reelSpeed * Time.deltaTime);
         playerTwoTransform.position = Vector2.MoveTowards(playerTwoTransform.position, playerOneTransform.position, reelSpeed * Time.deltaTime);
     }
 
+    /// <summary>
+    /// DamageEffect changes the material of the character being hit for the duration of their knockback, then reverts it
+    /// </summary>
+    /// <param name="reciever"></param>
+    /// <returns></returns>
     IEnumerator DamageEffect(GameObject reciever)
     {
         takingDamage = true;
+        //Sets the player taking damage's material to red to indicate taking damage...
         if (reciever.name == "Player1")
         {
             Debug.Log("Player 1 hit");
             playerOne.GetComponent<SpriteRenderer>().material = damageMat;
         }
-        else
+        else if (reciever.name == "Player2")
         {
             playerTwo.GetComponent<SpriteRenderer>().material = damageMat;
         }
 
+        //...waits for the knockback period...
         yield return new WaitForSeconds(0.2f);
 
+        //...then sets the material back to normal
         if (reciever.name == "Player1")
         {
             Debug.Log("Player 1 mat return");
             playerOne.GetComponent<SpriteRenderer>().material = playerOneMat;
         }
-        else
+        else if (reciever.name == "Player2")
         {
             playerTwo.GetComponent<SpriteRenderer>().material = playerTwoMat;
         }
         takingDamage = false;
     }
-
+    
+    /// <summary>
+    /// GameOver calls the sceneloader to take the players to the game over menu
+    /// </summary>
+    /// <returns></returns>
     IEnumerator GameOver()
     {
         Debug.Log("Waiting");

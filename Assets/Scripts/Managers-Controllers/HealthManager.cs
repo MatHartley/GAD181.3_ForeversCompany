@@ -103,12 +103,12 @@ public class HealthManager : MonoBehaviour
             if (regenOn)
             {
                 regenSFX.Play();
-                Debug.Log("Playing Regen SFX");
+                //Debug.Log("Playing Regen SFX");
             }
             else
             {
                 regenSFX.Stop();
-                Debug.Log("Stopping Regen SFX");
+                //Debug.Log("Stopping Regen SFX");
             }
 
             // Plays a warning noise if health drops below 50
